@@ -75,6 +75,20 @@ npm run preview
 ```
 Locally previews the production build.
 
+**Creating Distribution Package**
+
+To prepare the plugin for distribution, first ensure you've built all assets using `npm run build`. Then use the WP-CLI command to create a distribution package:
+
+```bash
+wp dist-archive . ./releases/modular-ai.zip --create-target-dir --format=zip
+```
+
+This will:
+- Create a `releases` directory if it doesn't exist
+- Package all plugin files into a ZIP archive
+- Exclude development files and directories (like `node_modules`, `.git`, etc.)
+- Create a clean distribution-ready plugin ZIP file
+
 #### Asset Loading
 
 Assets are automatically enqueued using the ViteManifest utility class, which reads the generated manifest file to get the correct hashed filenames.
