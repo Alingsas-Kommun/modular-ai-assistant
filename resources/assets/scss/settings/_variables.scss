@@ -1,0 +1,28 @@
+// Admin CSS custom properties (WordPress admin color scheme)
+:root {
+    --modular-ai-primary-color: var(--wp-admin-color-primary, #2271b1);
+    --modular-ai-secondary-color: var(--wp-admin-color-secondary, #2c3338);
+    --modular-ai-bg-light: var(--wp-admin-color-primary-light, color-mix(in srgb, #2271b1 10%, transparent));
+    --modular-ai-bg-subtle: color-mix(in srgb, var(--wp-admin-color-primary, #2271b1) 2%, transparent);
+    --modular-ai-border: var(--wp-admin-color-primary-border, color-mix(in srgb, #2271b1 20%, transparent));
+    --modular-ai-border-hover: var(--wp-admin-color-primary-border, color-mix(in srgb, #2271b1 20%, transparent));
+    --modular-ai-skeleton-bg: linear-gradient(90deg, var(--wp-admin-color-primary-light, color-mix(in srgb, #2271b1 10%, transparent)) 25%, color-mix(in srgb, var(--wp-admin-color-secondary, #2c3338) 10%, transparent) 50%, var(--wp-admin-color-primary-light, color-mix(in srgb, #2271b1 10%, transparent)) 75%);
+    --modular-ai-code-bg: var(--wp-admin-color-primary-light, color-mix(in srgb, #2271b1 10%, transparent));
+    --modular-ai-code-bg-alt: color-mix(in srgb, var(--wp-admin-color-primary, #2271b1) 5%, transparent);
+    --modular-ai-text: #374151;
+    --modular-ai-text-dark: #1f2937;
+    --modular-ai-text-light: #6b7280;
+    --modular-ai-error: #d63638;
+    --modular-ai-error-bg: #fcf0f1;
+    --modular-ai-modal-overlay: color-mix(in srgb, #000 60%, transparent);
+    --modular-ai-modal-bg: #ffffff;
+    --modular-ai-modal-border: var(--wp-admin-color-primary-border, color-mix(in srgb, #2271b1 20%, transparent));
+    --modular-ai-close-bg: #ffffff;
+    --modular-ai-close-border: var(--wp-admin-color-primary-border, color-mix(in srgb, #2271b1 20%, transparent));
+    --modular-ai-close-hover-bg: #f9fafb;
+    --modular-ai-shadow-primary: color-mix(in srgb, var(--wp-admin-color-primary, #2271b1) 30%, transparent);
+    --modular-ai-shadow-secondary: color-mix(in srgb, var(--wp-admin-color-secondary, #2c3338) 20%, transparent);
+    --modular-ai-shadow-primary-hover: color-mix(in srgb, var(--wp-admin-color-primary, #2271b1) 40%, transparent);
+    --modular-ai-shadow-secondary-hover: color-mix(in srgb, var(--wp-admin-color-secondary, #2c3338) 30%, transparent);
+    --modular-ai-focus-outline: color-mix(in srgb, var(--wp-admin-color-primary, #2271b1) 40%, transparent);
+}

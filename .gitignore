@@ -1,0 +1,13 @@
+# Application
+node_modules/
+dist/
+/vendor
+/public
+releases
+.env
+npm-debug.log
+yarn-error.log
+
+# Mac OS
+.DS_Store
+*.log

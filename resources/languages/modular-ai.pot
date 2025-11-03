@@ -1,0 +1,931 @@
+# Copyright (C) 2025 Adam Alexandersson
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Modular AI 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modular-ai\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-10-27T16:04:03+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: modular-ai\n"
+
+#. Plugin Name of the plugin
+#: modular-ai.php
+#: src/Admin/Menu.php:25
+#: src/Admin/Menu.php:26
+msgid "Modular AI"
+msgstr ""
+
+#. Description of the plugin
+#: modular-ai.php
+msgid "WordPress plugin that let's you integrate AI into your wordpress website"
+msgstr ""
+
+#. Author of the plugin
+#: modular-ai.php
+msgid "Adam Alexandersson"
+msgstr ""
+
+#: resources/views/components/editor-integration.php:2
+msgid "No AI modules with editor integration enabled."
+msgstr ""
+
+#: resources/views/components/editor-integration.php:5
+msgid "Analyze your content with AI to get improvement suggestions."
+msgstr ""
+
+#: resources/views/components/editor-integration.php:8
+msgid "Select AI Module:"
+msgstr ""
+
+#: resources/views/components/editor-integration.php:12
+msgid "Select AI Module"
+msgstr ""
+
+#: resources/views/components/editor-integration.php:23
+msgid "Analyze Content"
+msgstr ""
+
+#: resources/views/components/module.php:21
+msgid "AI Overview"
+msgstr ""
+
+#: resources/views/components/module.php:66
+msgid "Close modal"
+msgstr ""
+
+#: resources/views/components/module.php:82
+#: resources/views/components/module.php:86
+#: resources/views/fields/api-key.php:41
+msgid "Copied!"
+msgstr ""
+
+#: resources/views/components/module.php:82
+msgid "Copy analysis"
+msgstr ""
+
+#: resources/views/components/module.php:86
+msgid "Copy CURL"
+msgstr ""
+
+#: resources/views/fields/api-key.php:32
+msgid "Copy to Clipboard"
+msgstr ""
+
+#: resources/views/fields/api-key.php:41
+msgid "Copy"
+msgstr ""
+
+#: resources/views/fields/api-key.php:49
+msgid "Generate new API key"
+msgstr ""
+
+#: resources/views/fields/api-key.php:55
+msgid "Generating..."
+msgstr ""
+
+#: resources/views/fields/api-key.php:55
+msgid "Regenerate"
+msgstr ""
+
+#: resources/views/partials/model-testing.php:9
+msgid "Click the button to test if the model can be reached with current settings."
+msgstr ""
+
+#: resources/views/partials/model-testing.php:18
+msgid "Testing..."
+msgstr ""
+
+#: resources/views/partials/model-testing.php:18
+msgid "Test Model"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:8
+msgid "Use these shortcodes to display this module:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:11
+msgid "Basic Usage:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:13
+msgid "Uses configured content"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:17
+msgid "Custom Query:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:19
+msgid "Uses custom question instead of configured content"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:23
+msgid "Modal Display:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:25
+msgid "Shows response in modal popup (button)"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:29
+msgid "Modal with Custom Button:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:31
+msgid "Modal with custom button text"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:35
+msgid "Debug Mode:"
+msgstr ""
+
+#: resources/views/partials/module-usage.php:37
+msgid "Shows CURL command for debugging"
+msgstr ""
+
+#: src/Abstracts/PostType.php:76
+msgid "Date"
+msgstr ""
+
+#: src/Admin/EditorIntegration.php:31
+#: src/Api/Endpoints/ModuleTemplate.php:89
+msgid "AI Content Analysis"
+msgstr ""
+
+#: src/Admin/Settings.php:20
+msgid "Modular AI Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:30
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:42
+msgid "General"
+msgstr ""
+
+#: src/Admin/Settings.php:45
+msgid "Toggle Features"
+msgstr ""
+
+#: src/Admin/Settings.php:46
+msgid "Toggle the features of the plugin."
+msgstr ""
+
+#: src/Admin/Settings.php:50
+msgid "Enable Shortcode"
+msgstr ""
+
+#: src/Admin/Settings.php:52
+msgid "Enable the [modular-ai] shortcode functionality."
+msgstr ""
+
+#: src/Admin/Settings.php:60
+msgid "Appearance"
+msgstr ""
+
+#: src/Admin/Settings.php:63
+msgid "Color Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:64
+msgid "Customize the colors used in the frontend display."
+msgstr ""
+
+#: src/Admin/Settings.php:68
+msgid "Primary Color"
+msgstr ""
+
+#: src/Admin/Settings.php:70
+msgid "The primary color (default: purple #9333ea)."
+msgstr ""
+
+#: src/Admin/Settings.php:75
+msgid "Secondary Color"
+msgstr ""
+
+#: src/Admin/Settings.php:77
+msgid "The secondary color (default: blue #3b82f6)."
+msgstr ""
+
+#. Translators: 1: Parameter name
+#: src/Api/Abstracts/Endpoint.php:131
+#, php-format
+msgid "Missing required parameter: %s"
+msgstr ""
+
+#: src/Api/Endpoints/ListModels.php:57
+#: src/Api/Endpoints/ListModules.php:57
+msgid "Valid API key required. Please provide a valid API key via X-API-Key header or api_key parameter."
+msgstr ""
+
+#: src/Api/Endpoints/RunModule.php:112
+msgid "Module not found or not publicly accessible"
+msgstr ""
+
+#: src/Api/Endpoints/RunModule.php:130
+msgid "You do not have permission to access this module"
+msgstr ""
+
+#: src/Api/Endpoints/RunModule.php:155
+#: src/Services/ModuleRunner.php:51
+msgid "Module not found"
+msgstr ""
+
+#: src/Api/Endpoints/TestModel.php:93
+msgid "Model not found"
+msgstr ""
+
+#: src/Api/Endpoints/TestModel.php:102
+#: src/Http/Clients/OpenAIClient.php:113
+msgid "Model name missing"
+msgstr ""
+
+#: src/Api/Endpoints/TestModel.php:110
+msgid "Endpoint URL missing"
+msgstr ""
+
+#: src/Api/Endpoints/TestModel.php:118
+#: src/Http/Clients/OpenAIClient.php:42
+#: src/Http/Clients/OpenAIClient.php:109
+msgid "API key missing"
+msgstr ""
+
+#. Translators: %s: Provider class name
+#: src/Application.php:94
+#, php-format
+msgid "Provider %s must extend ServiceProvider"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:34
+msgctxt "Post type general name"
+msgid "API Keys"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:35
+msgctxt "Post type singular name"
+msgid "API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:36
+msgctxt "Admin Menu text"
+msgid "API Keys"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:37
+msgctxt "Add New on Toolbar"
+msgid "API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:38
+#: src/Entities/Models/Model.php:24
+#: src/Entities/Modules/Module.php:24
+msgid "Add New"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:39
+msgid "Add New API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:40
+msgid "New API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:41
+msgid "Edit API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:42
+msgid "View API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:43
+msgid "API Keys"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:44
+msgid "Search API Keys"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:45
+msgid "No API keys found."
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:46
+msgid "No API keys found in Trash."
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:57
+msgid "API keys for external access"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:70
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:37
+#: src/Entities/Models/MetaBoxes/Configuration.php:51
+msgid "API Key"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:75
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:49
+msgid "Status"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:80
+msgid "Created"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:85
+msgid "Last Used"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:103
+msgid "Not generated"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:117
+#: src/Entities/Models/MetaBoxes/Configuration.php:59
+#: src/Entities/Models/Model.php:78
+msgid "Active"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:119
+msgid "Inactive"
+msgstr ""
+
+#: src/Entities/ApiKeys/ApiKey.php:147
+msgid "Never"
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:21
+msgid "API Key Configuration"
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:33
+msgid "API Key Settings"
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:39
+msgid "This key is automatically generated. Copy it to use in your API requests."
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:43
+msgid "Description"
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:45
+msgid "Optional description for this API key (e.g., \"Mobile app\", \"External website\")"
+msgstr ""
+
+#: src/Entities/ApiKeys/MetaBoxes/Configuration.php:51
+msgid "Enable or disable this API key"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:21
+msgid "Model Settings"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:33
+msgid "Model Configuration"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:37
+msgid "Model Name"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:40
+msgid "e.g., gpt-4, claude-3, llama-2"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:44
+msgid "Endpoint URL"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:47
+msgid "Full API endpoint URL"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:53
+msgid "Leave blank to keep existing key"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:57
+msgid "Options"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:64
+#: src/Entities/Models/Model.php:73
+#: src/Entities/Modules/MetaBoxes/Configuration.php:116
+msgid "Streaming"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Configuration.php:66
+msgid "Enable streaming (show response as it generates)"
+msgstr ""
+
+#: src/Entities/Models/MetaBoxes/Testing.php:22
+msgid "Test Connection"
+msgstr ""
+
+#: src/Entities/Models/Model.php:20
+msgctxt "Post type general name"
+msgid "Models"
+msgstr ""
+
+#: src/Entities/Models/Model.php:21
+msgctxt "Post type singular name"
+msgid "Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:22
+msgctxt "Admin Menu text"
+msgid "Models"
+msgstr ""
+
+#: src/Entities/Models/Model.php:23
+msgctxt "Add New on Toolbar"
+msgid "Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:25
+msgid "Add New Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:26
+msgid "New Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:27
+msgid "Edit Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:28
+msgid "View Model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:29
+msgid "Models"
+msgstr ""
+
+#: src/Entities/Models/Model.php:30
+msgid "Search Models"
+msgstr ""
+
+#: src/Entities/Models/Model.php:31
+msgid "Parent Models:"
+msgstr ""
+
+#: src/Entities/Models/Model.php:32
+msgid "No models found."
+msgstr ""
+
+#: src/Entities/Models/Model.php:33
+msgid "No models found in Trash."
+msgstr ""
+
+#: src/Entities/Models/Model.php:34
+msgid "Model archives"
+msgstr ""
+
+#: src/Entities/Models/Model.php:35
+msgid "Insert into model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:36
+msgid "Uploaded to this model"
+msgstr ""
+
+#: src/Entities/Models/Model.php:37
+msgid "Filter models list"
+msgstr ""
+
+#: src/Entities/Models/Model.php:38
+msgid "Models list navigation"
+msgstr ""
+
+#: src/Entities/Models/Model.php:39
+msgid "Models list"
+msgstr ""
+
+#: src/Entities/Models/Model.php:50
+msgid "AI models configuration"
+msgstr ""
+
+#: src/Entities/Models/Model.php:63
+msgid "Model ID"
+msgstr ""
+
+#: src/Entities/Models/Model.php:68
+msgid "Endpoint"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Access.php:22
+msgid "Access & Cache"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Access.php:37
+msgid "Public Access"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Access.php:39
+msgid "Allow public access via REST API"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Access.php:41
+msgid "Enable this to allow non-logged-in users to use this module via the REST API."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:25
+msgid "Module Configuration"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:38
+msgid "— Select Model —"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:49
+msgid "Basic Configuration"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:53
+msgid "AI Model"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:57
+msgid "Select which AI model to use for this module."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:61
+msgid "System Prompt"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:65
+msgid "Instructions for the AI. This defines the AI's role and behavior."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:69
+msgid "Content Source"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:73
+msgid "Custom text (below)"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:74
+msgid "All page text"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:75
+msgid "Page title only"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:76
+msgid "Page excerpt only"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:78
+msgid "What content should be sent to the AI?"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:82
+msgid "Custom Text"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:85
+msgid "Used only if \"Custom text\" is selected above."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:89
+msgid "Output Format"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:93
+msgid "Plain Text (escaped)"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:94
+msgid "HTML (sanitized)"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:96
+msgid "How should the AI response be formatted?"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:100
+msgid "Markdown"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:102
+msgid "Enable markdown formatting"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:104
+msgid "Convert markdown syntax to HTML in AI responses."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:108
+msgid "Editor Integration"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:110
+msgid "Enable AI analysis button in the editor"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:112
+msgid "Adds an analysis button in the editor that uses this AI module to analyze content."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:120
+msgid "Use model default"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:121
+msgid "Enabled"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:122
+msgid "Disabled"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:124
+msgid "Control how responses are delivered. Streaming shows content as it generates. Instant is better for short responses or cached content."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:129
+msgid "Cache"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:133
+msgid "Cache TTL"
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Configuration.php:136
+msgid "Cache duration in seconds. Use 0 to turn off caching."
+msgstr ""
+
+#: src/Entities/Modules/MetaBoxes/Usage.php:33
+msgid "Usage"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:20
+msgctxt "Post type general name"
+msgid "Modules"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:21
+msgctxt "Post type singular name"
+msgid "Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:22
+msgctxt "Admin Menu text"
+msgid "Modules"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:23
+msgctxt "Add New on Toolbar"
+msgid "Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:25
+msgid "Add New Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:26
+msgid "New Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:27
+msgid "Edit Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:28
+msgid "View Module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:29
+msgid "Modules"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:30
+msgid "Search Modules"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:31
+msgid "Parent Modules:"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:32
+msgid "No modules found."
+msgstr ""
+
+#: src/Entities/Modules/Module.php:33
+msgid "No modules found in Trash."
+msgstr ""
+
+#: src/Entities/Modules/Module.php:34
+msgid "Module archives"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:35
+msgid "Insert into module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:36
+msgid "Uploaded to this module"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:37
+msgid "Filter modules list"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:38
+msgid "Modules list navigation"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:39
+msgid "Modules list"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:50
+msgid "AI modules for content generation and analysis"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:63
+msgid "Model"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:68
+msgid "Output"
+msgstr ""
+
+#: src/Entities/Modules/Module.php:73
+msgid "Public"
+msgstr ""
+
+#. Translators: This is an empty response from the server.
+#: src/Http/Client.php:59
+msgid "Empty response from server"
+msgstr ""
+
+#. Translators: This is a JSON error message.
+#: src/Http/Client.php:68
+#, php-format
+msgid "JSON error: %s"
+msgstr ""
+
+#. Translators: 1: HTTP status code, 2: Error message
+#: src/Http/Client.php:99
+#: src/Http/Client.php:235
+#, php-format
+msgid "Request error (HTTP %1$d): %2$s"
+msgstr ""
+
+#. Translators: This is an HTTP error message.
+#: src/Http/Client.php:106
+#, php-format
+msgid "HTTP error: %s"
+msgstr ""
+
+#. Translators: This is a streaming error message.
+#: src/Http/Client.php:154
+msgid "Streaming error"
+msgstr ""
+
+#. Translators: 1: HTTP status code, 2: Error message
+#: src/Http/Client.php:165
+#, php-format
+msgid "Streaming error (HTTP %1$d): %2$s"
+msgstr ""
+
+#. Translators: This is a streaming error message.
+#: src/Http/Client.php:242
+#, php-format
+msgid "Streaming error: %s"
+msgstr ""
+
+#: src/Http/Clients/OpenAIClient.php:38
+#: src/Http/Clients/OpenAIClient.php:105
+msgid "Endpoint missing"
+msgstr ""
+
+#: src/Http/Clients/OpenAIClient.php:46
+msgid "Model ID missing"
+msgstr ""
+
+#. Translators: This is a test message to verify the AI model is working correctly.
+#: src/Http/Clients/OpenAIClient.php:120
+#, php-format
+msgid "Please respond in %s language. This is a test to verify the AI model is working correctly."
+msgstr ""
+
+#: src/Http/Clients/OpenAIClient.php:138
+msgid "Model connection successful!"
+msgstr ""
+
+#: src/Services/ModuleRunner.php:60
+msgid "Model not found. Please ensure a model is selected for this module."
+msgstr ""
+
+#. Translators: 1: Model title
+#: src/Services/ModuleRunner.php:69
+#, php-format
+msgid "Model \"%s\" is inactive. Please activate it in the Models settings."
+msgstr ""
+
+#: src/Services/ModuleRunner.php:78
+msgid "No question or content provided"
+msgstr ""
+
+#: src/Services/ModuleRunner.php:156
+msgid "Analyze the content on this page."
+msgstr ""
+
+#: src/Shortcodes/ModularAI.php:40
+msgid "Show AI Response"
+msgstr ""
+
+#. Translators: %s: Class name
+#: src/Utilities/Container.php:88
+#, php-format
+msgid "Class %s does not exist"
+msgstr ""
+
+#: resources/assets/js/components/apiKeyConfiguration.js:17
+msgid "Failed to copy:"
+msgstr ""
+
+#: resources/assets/js/components/apiKeyConfiguration.js:18
+msgid "Failed to copy to clipboard"
+msgstr ""
+
+#: resources/assets/js/components/apiKeyConfiguration.js:36
+msgid "Are you sure you want to regenerate this API key? The old key will no longer work."
+msgstr ""
+
+#: resources/assets/js/components/apiKeyConfiguration.js:64
+msgid "Failed to regenerate API key:"
+msgstr ""
+
+#: resources/assets/js/components/editorIntegration.js:14
+msgid "Please select a module"
+msgstr ""
+
+#: resources/assets/js/components/editorIntegration.js:45
+msgid "Failed to load template"
+msgstr ""
+
+#: resources/assets/js/components/editorIntegration.js:70
+msgid "Invalid template response"
+msgstr ""
+
+#: resources/assets/js/components/editorIntegration.js:74
+msgid "Error loading module template:"
+msgstr ""
+
+#: resources/assets/js/components/editorIntegration.js:77
+msgid "Error loading template:"
+msgstr ""
+
+#: resources/assets/js/components/modelTest.js:31
+msgid "Response:"
+msgstr ""
+
+#: resources/assets/js/components/modelTest.js:37
+msgid "Unknown error"
+msgstr ""
+
+#: resources/assets/js/components/modelTest.js:38
+#: resources/assets/js/components/modelTest.js:42
+msgid "Error:"
+msgstr ""
+
+#: resources/assets/js/components/modelTest.js:42
+msgid "Network error. Please try again."
+msgstr ""
+
+#: resources/assets/js/components/module.js:103
+msgid "Something went wrong. Please try again later."
+msgstr ""
+
+#: resources/assets/js/components/module.js:173
+msgid "Stream interrupted:"
+msgstr ""
+
+#: resources/assets/js/components/module.js:187
+msgid "Stream interrupted"
+msgstr ""
+
+#: resources/assets/js/components/module.js:189
+#: resources/assets/js/streaming/streamHandler.js:79
+msgid "Failed to read stream"
+msgstr ""
+
+#: resources/assets/js/components/module.js:205
+msgid "Request failed"
+msgstr ""

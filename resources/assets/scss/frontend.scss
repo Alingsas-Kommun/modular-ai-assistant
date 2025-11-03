@@ -1,0 +1,7 @@
+@use 'settings/variables-frontend';
+@use 'components/module';
+
+// Alpine.js cloak
+[x-cloak] {
+    display: none !important;
+}

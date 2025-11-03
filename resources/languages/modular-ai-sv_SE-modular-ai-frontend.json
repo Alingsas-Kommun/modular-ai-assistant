@@ -1,0 +1,66 @@
+{
+  "domain": "modular-ai",
+  "locale_data": {
+    "modular-ai": {
+      "": {
+        "domain": "modular-ai",
+        "lang": "sv_SE",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "Failed to copy:": [
+        "Misslyckades med att kopiera:"
+      ],
+      "Failed to copy to clipboard": [
+        "Misslyckades med att kopiera till urklipp"
+      ],
+      "Are you sure you want to regenerate this API key? The old key will no longer work.": [
+        "Är du säker på att du vill generera om den här API-nyckeln? Den gamla nyckeln kommer inte längre att fungera."
+      ],
+      "Failed to regenerate API key:": [
+        "Misslyckades med att generera API-nyckeln:"
+      ],
+      "Response:": [
+        "Svar:"
+      ],
+      "Unknown error": [
+        "Okänt fel"
+      ],
+      "Error:": [
+        "Fel:"
+      ],
+      "Network error. Please try again.": [
+        "Nätverksfel. Vänligen försök igen."
+      ],
+      "Failed to read stream": [
+        "Misslyckades med att läsa strömmen"
+      ],
+      "Request failed": [
+        "Begäran misslyckades"
+      ],
+      "Something went wrong. Please try again later.": [
+        "Något gick fel. Försök igen senare."
+      ],
+      "Stream interrupted:": [
+        "Avbruten steam:"
+      ],
+      "Stream interrupted": [
+        "Avbruten steam"
+      ],
+      "Please select a module": [
+        "Vänligen välj en modul"
+      ],
+      "Failed to load template": [
+        "Misslyckades med att läsa in mallen"
+      ],
+      "Invalid template response": [
+        "Ogiltigt mallsvar"
+      ],
+      "Error loading module template:": [
+        "Fel vid laddning av modulmallen:"
+      ],
+      "Error loading template:": [
+        "Fel vid laddning av mall:"
+      ]
+    }
+  }
+}

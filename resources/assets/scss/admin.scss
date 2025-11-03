@@ -1,0 +1,9 @@
+@use 'settings/variables';
+@use 'components/module';
+@use 'components/editor-integration';
+@use 'components/api-key-configuration';
+
+// Alpine.js cloak
+[x-cloak] {
+    display: none !important;
+}

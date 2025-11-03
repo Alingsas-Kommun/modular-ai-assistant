@@ -1,0 +1,89 @@
+.modular-ai-api-key-wrapper {
+    width: 100%;
+}
+
+.modular-ai-api-key-field-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    
+    .modular-ai-api-key-input {
+        flex: 1;
+        min-width: 300px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px 12px;
+        color: #333;
+        user-select: all;
+        
+        &:focus {
+            outline: 2px solid var(--wp-admin-color-primary);
+            outline-offset: 0;
+            background-color: #fff;
+        }
+    }
+}
+
+.modular-ai-copy-button,
+.modular-ai-regenerate-button {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    height: 36px;
+    box-sizing: border-box;
+    
+    svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        
+        &.spinning {
+            animation: spin 1s linear infinite;
+        }
+    }
+    
+    &:not(:disabled):hover {
+        background-color: var(--wp-admin-color-primary);
+        border-color: var(--wp-admin-color-primary);
+        color: #fff;
+    }
+    
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.modular-ai-copy-button {
+    &.copied {
+        background-color: #00a32a;
+        border-color: #00a32a;
+        color: #fff;
+        
+        &:hover {
+            background-color: #008a20;
+            border-color: #008a20;
+        }
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
