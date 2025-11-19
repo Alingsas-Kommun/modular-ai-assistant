@@ -11,10 +11,7 @@
     "autoload": {
         "psr-4": {
             "ModularAI\\": "src/"
-        },
-        "files": [
-            "helpers.php"
-        ]
+        }
     },
     "scripts": {
         "post-install-cmd": [

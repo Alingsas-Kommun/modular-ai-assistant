@@ -33,6 +33,11 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require_once __DIR__ . '/vendor/autoload.php';
 }
 
+// Load helper functions
+if(file_exists(__DIR__ . '/helpers.php')) {
+    require_once __DIR__ . '/helpers.php';
+}
+
 // Load the textdomain
 add_action('init', function() {
     wp_set_script_translations('modular-ai', 'modular-ai');
