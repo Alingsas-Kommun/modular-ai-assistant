@@ -3,7 +3,7 @@
  * Plugin Name: Modular AI
  * Plugin URI: 
  * Description: WordPress plugin that let's you integrate AI into your wordpress website
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Alingsås Kommun
  * Author URI: https://alingsas.se
  * License: GPL v3 or later
@@ -83,6 +83,9 @@ require_once $autoloader;
 add_action('init', function() {
     wp_set_script_translations('modular-ai', 'modular-ai');
 });
+
+// Require helpers
+require_once __DIR__ . '/helpers.php';
 
 // Boot the plugin
 Application::configure()

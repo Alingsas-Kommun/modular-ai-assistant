@@ -4,7 +4,7 @@ Tags: ai, content generation, editor help, snippets
 Requires at least: 5.9
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -113,6 +113,9 @@ Navigate to Modular AI > Settings > General and uncheck "Enable Shortcode". This
 Yes, the plugin is fully translation-ready with support for WordPress i18n/l10n.
 
 == Changelog ==
+
+= 1.0.3 =
+* Moved the helpers away from the composer autoload to a regular require_once
 
 = 1.0.2 =
 * Fixed automated build script on composer install/update for the plugin type
