@@ -8,6 +8,10 @@
  * @var array $field
  * @var string $required
  */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 <label>
     <input 

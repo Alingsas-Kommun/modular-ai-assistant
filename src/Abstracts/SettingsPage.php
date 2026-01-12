@@ -4,6 +4,10 @@ namespace ModularAI\Abstracts;
 
 use ModularAI\Utilities\Template;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 abstract class SettingsPage
 {
     protected static $parent_slug = '';

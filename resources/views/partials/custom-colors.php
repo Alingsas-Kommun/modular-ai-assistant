@@ -4,7 +4,11 @@
  *
  * @var string $primary_color
  * @var string $secondary_color
- */
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 
 <style id="modular-ai-custom-colors">

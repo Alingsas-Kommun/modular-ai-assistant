@@ -7,8 +7,16 @@
  * @var string $value
  * @var array $field
  * @var string $required
- */
+ * 
+ * phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+ * These are template variables extracted from an array, not true global variables.
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
+
 <select 
     name="<?php echo esc_attr($field_name); ?>" 
     id="<?php echo esc_attr($field_id); ?>" 

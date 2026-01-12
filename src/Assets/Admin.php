@@ -5,6 +5,10 @@ namespace ModularAI\Assets;
 use ModularAI\Utilities\ViteManifest;
 use function ModularAI\{config, di};
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 class Admin
 {
     /**

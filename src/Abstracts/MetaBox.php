@@ -4,6 +4,10 @@ namespace ModularAI\Abstracts;
 
 use ModularAI\Utilities\Template;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 abstract class MetaBox
 {
     protected static $post_types = [];

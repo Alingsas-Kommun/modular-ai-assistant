@@ -3,8 +3,13 @@
  * Module Usage MetaBox Template
  *
  * @var WP_Post $post
- */
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
+
 <p><?php esc_html_e('Use these shortcodes to display this module:', 'modular-ai'); ?></p>
 
 <div class="modular-ai-module-example" style="margin-bottom: 15px;">

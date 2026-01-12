@@ -7,6 +7,10 @@ use ModularAI\Entities\Modules\Repository as ModulesRepository;
 
 use function ModularAI\di;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 class EditorIntegration
 {
     /**

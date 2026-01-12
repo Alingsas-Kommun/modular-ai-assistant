@@ -2,6 +2,10 @@
 
 namespace ModularAI\Admin;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 class Menu
 {
     /**

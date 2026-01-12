@@ -10,7 +10,11 @@
  * @var string $required
  * @var string $required_mark
  * @var MetaBox $metabox
- */
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 <tr>
     <th scope="row">

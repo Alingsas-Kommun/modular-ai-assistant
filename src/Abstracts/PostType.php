@@ -2,6 +2,10 @@
 
 namespace ModularAI\Abstracts;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 abstract class PostType
 {
     protected static $post_type_slug = '';

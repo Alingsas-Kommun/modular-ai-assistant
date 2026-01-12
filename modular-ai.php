@@ -37,6 +37,9 @@ if (!function_exists('add_action')) {
 // in the WordPress plugins directory (e.g., web/app/plugins/modular-ai/), not in vendor/.
 // We detect this by checking if the plugin's own vendor/ directory exists.
 
+// phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+// These are file-scoped variables used for bootstrapping, not true global variables.
+
 $pluginAutoloader = __DIR__ . '/vendor/autoload.php';
 
 if (file_exists($pluginAutoloader)) {
@@ -78,6 +81,8 @@ if (file_exists($pluginAutoloader)) {
 }
 
 require_once $autoloader;
+
+// phpcs:enable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 
 // Load the textdomain
 add_action('init', function() {

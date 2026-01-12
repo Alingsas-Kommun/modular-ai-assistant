@@ -3,8 +3,13 @@
  * Model Testing MetaBox Template
  *
  * @var WP_Post $post
- */
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
+
 <div x-data="modelTest">
     <p><?php esc_html_e('Click the button to test if the model can be reached with current settings.', 'modular-ai'); ?></p>
 

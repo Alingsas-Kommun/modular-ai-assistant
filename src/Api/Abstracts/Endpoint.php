@@ -4,6 +4,10 @@ namespace ModularAI\Api\Abstracts;
 
 use ModularAI\Api\Traits\ApiAuthentication;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 abstract class Endpoint
 {
     use ApiAuthentication;

@@ -8,8 +8,16 @@
  * @var string $nonce_name
  * @var MetaBox $metabox
  * @var string $layout 'table' or 'stacked'
- */
+ * 
+ * phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+ * These are template variables extracted from an array, not true global variables.
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
+
 <?php
     // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     echo $nonce_field;

@@ -1,22 +1,30 @@
 <?php
-    /**
-     * Module Container Template
-     * Handles both inline and modal display modes
-     * Can be invoked via shortcode, admin UI, or other methods
-     *
-     * @var int $module_id
-     * @var string $query
-     * @var bool $show_curl
-     * @var string $instance_id
-     * @var bool $modal
-     * @var string $button_text (only for modal mode)
-     * @var string $button_class (only for modal mode)
+/**
+ * Module Container Template
+ * Handles both inline and modal display modes
+ * Can be invoked via shortcode, admin UI, or other methods
+ *
+ * @var int $module_id
+ * @var string $query
+ * @var bool $show_curl
+ * @var string $instance_id
+ * @var bool $modal
+ * @var string $button_text (only for modal mode)
+ * @var string $button_class (only for modal mode)
  * @var bool $hide_trigger (hide trigger button in modal mode, default false)
  * @var string $modal_title (modal header title, default 'AI Overview')
  * @var int|null $post_id (optional post ID for context)
  * @var string $context (context: 'frontend' or 'editor', default 'frontend')
  * @var bool|null $streaming (streaming override parameter)
+ *
+ * phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+ * These are template variables extracted from an array, not true global variables.
  */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 $hide_trigger = $hide_trigger ?? false;
 $modal_title = $modal_title ?? __('AI Overview', 'modular-ai');
 $post_id = $post_id ?? null;

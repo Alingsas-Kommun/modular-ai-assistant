@@ -1,3 +1,19 @@
+<?php
+/**
+ * Editor Integration Component
+ *
+ * @var array $modules
+ * @var int $post_id
+ * 
+ * phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+ * These are template variables extracted from an array, not true global variables.
+ */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
+?>
+
 <?php if (empty($modules)): ?>
     <p><?php esc_html_e('No AI modules with editor integration enabled.', 'modular-ai'); ?></p>
 <?php else: ?>

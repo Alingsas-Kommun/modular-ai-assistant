@@ -8,6 +8,10 @@
  * @var string $menu_slug
  * @var SettingsPage $settings_page
  */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 
 <div class="wrap">
@@ -15,7 +19,7 @@
     
     <?php if (count($tabs) > 1): ?>
         <nav class="nav-tab-wrapper">
-            <?php foreach ($tabs as $tab_key => $tab): ?>
+            <?php foreach ($tabs as $tab_key => $tab): // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound ?>
                 <a 
                     href="<?php echo esc_url(add_query_arg(['page' => $menu_slug, 'tab' => $tab_key], admin_url('admin.php'))); ?>" 
                     class="nav-tab <?php echo $active_tab === $tab_key ? 'nav-tab-active' : ''; ?>"

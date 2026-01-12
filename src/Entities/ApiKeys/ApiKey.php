@@ -4,6 +4,10 @@ namespace ModularAI\Entities\ApiKeys;
 
 use ModularAI\Abstracts\PostType;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 class ApiKey extends PostType
 {
     protected static $post_type_slug = 'mai_api_key';

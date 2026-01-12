@@ -7,7 +7,14 @@
  * @var string $value
  * @var array $field
  * @var string $required
- */
+ * 
+ * phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
+ * These are template variables extracted from an array, not true global variables.
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 
 $min = isset($field['min']) ? $field['min'] : 0;
 $step = isset($field['step']) ? $field['step'] : 1;

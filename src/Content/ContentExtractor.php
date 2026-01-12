@@ -65,7 +65,7 @@ class ContentExtractor
         $main_content = get_the_content(null, false, $current_post);
         if ($main_content) {
             // Apply WordPress content filters to get rendered HTML
-            $main_content = apply_filters('the_content', $main_content);
+            $main_content = apply_filters('the_content', $main_content); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
             $content .= $main_content . "\n\n";
         }
         

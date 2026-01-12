@@ -4,6 +4,10 @@ namespace ModularAI;
 
 use ModularAI\Utilities\Container;
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 /**
  * Get configuration value
  *

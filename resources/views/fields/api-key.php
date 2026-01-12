@@ -9,6 +9,10 @@
  * @var string $required
  * @var \WP_Post $post
  */
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 <div x-data="apiKeyConfiguration(<?php echo absint($post->ID); ?>)" class="modular-ai-api-key-wrapper">
     <div class="modular-ai-api-key-field-group">

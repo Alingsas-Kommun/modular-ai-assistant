@@ -7,7 +7,11 @@
  * @var string $value
  * @var array $field
  * @var string $required
- */
+**/
+
+if (! defined('ABSPATH')) {
+    exit;
+}
 ?>
 
 <input 

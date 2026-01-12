@@ -7,6 +7,10 @@ use ModularAI\Utilities\Template;
 
 use function ModularAI\{config, di, getSetting};
 
+if (! defined('ABSPATH')) {
+    exit;
+}
+
 class Frontend
 {
     /**

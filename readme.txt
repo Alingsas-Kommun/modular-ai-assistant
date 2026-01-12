@@ -2,7 +2,7 @@
 Contributors: considadam
 Tags: ai, content generation, editor help, snippets
 Requires at least: 5.9
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
 Stable tag: 1.0.3
 License: GPLv3 or later
