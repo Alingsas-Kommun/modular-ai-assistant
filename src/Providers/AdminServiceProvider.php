@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
-use ModularAI\Assets\Admin as AdminAssets;
-use ModularAI\Admin\Menu;
-use ModularAI\Admin\Settings;
-use ModularAI\Admin\EditorIntegration;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
+use ModularAIAssistant\Assets\Admin as AdminAssets;
+use ModularAIAssistant\Admin\Menu;
+use ModularAIAssistant\Admin\Settings;
+use ModularAIAssistant\Admin\EditorIntegration;
 
 class AdminServiceProvider extends ServiceProvider
 {

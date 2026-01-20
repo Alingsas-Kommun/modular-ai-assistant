@@ -1,14 +1,14 @@
-.modular-ai-api-key-wrapper {
+.modular-ai-assistant-api-key-wrapper {
     width: 100%;
 }
 
-.modular-ai-api-key-field-group {
+.modular-ai-assistant-api-key-field-group {
     display: flex;
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
     
-    .modular-ai-api-key-input {
+    .modular-ai-assistant-api-key-input {
         flex: 1;
         min-width: 300px;
         font-family: 'Courier New', Courier, monospace;
@@ -28,8 +28,8 @@
     }
 }
 
-.modular-ai-copy-button,
-.modular-ai-regenerate-button {
+.modular-ai-assistant-copy-button,
+.modular-ai-assistant-regenerate-button {
     display: inline-flex !important;
     align-items: center;
     gap: 6px;
@@ -65,7 +65,7 @@
     }
 }
 
-.modular-ai-copy-button {
+.modular-ai-assistant-copy-button {
     &.copied {
         background-color: #00a32a;
         border-color: #00a32a;

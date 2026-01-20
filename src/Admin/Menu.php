@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Admin;
+namespace ModularAIAssistant\Admin;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -26,10 +26,10 @@ class Menu
     public function registerAdminMenu()
     {
         add_menu_page(
-            __('Modular AI', 'modular-ai'),            // Page title
-            __('Modular AI', 'modular-ai'),            // Menu title
+            __('Modular AI Assistant', 'modular-ai-assistant'),            // Page title
+            __('Modular AI Assistant', 'modular-ai-assistant'),            // Menu title
             'manage_options',                               // Capability
-            'modular-ai',                                 // Menu slug
+            'modular-ai-assistant',                                 // Menu slug
             false,                                          // Callback function
             'dashicons-lightbulb',                          // Icon
             30                                              // Position

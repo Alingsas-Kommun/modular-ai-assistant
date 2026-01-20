@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI\Entities\Models;
+namespace ModularAIAssistant\Entities\Models;
 
-use ModularAI\Entities\Models\MetaBoxes\Configuration;
-use ModularAI\Entities\Models\MetaBoxes\Testing;
+use ModularAIAssistant\Entities\Models\MetaBoxes\Configuration;
+use ModularAIAssistant\Entities\Models\MetaBoxes\Testing;
 
 class Repository
 {

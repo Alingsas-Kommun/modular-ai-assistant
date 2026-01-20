@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Api\Abstracts;
+namespace ModularAIAssistant\Api\Abstracts;
 
-use ModularAI\Api\Traits\ApiAuthentication;
+use ModularAIAssistant\Api\Traits\ApiAuthentication;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -17,7 +17,7 @@ abstract class Endpoint
      *
      * @var string
      */
-    protected $namespace = 'modular-ai';
+    protected $namespace = 'modular-ai-assistant';
 
     /**
      * API version
@@ -132,7 +132,7 @@ abstract class Endpoint
                 return $this->error(
                     'mai_missing_parameter',
                     /* Translators: 1: Parameter name */
-                    sprintf(__('Missing required parameter: %s', 'modular-ai'), $param),
+                    sprintf(__('Missing required parameter: %s', 'modular-ai-assistant'), $param),
                     400
                 );
             }

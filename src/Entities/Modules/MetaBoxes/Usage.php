@@ -1,11 +1,11 @@
 <?php
 
-namespace ModularAI\Entities\Modules\MetaBoxes;
+namespace ModularAIAssistant\Entities\Modules\MetaBoxes;
 
-use ModularAI\Abstracts\MetaBox;
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Abstracts\MetaBox;
+use ModularAIAssistant\Utilities\Template;
 
-use function ModularAI\getSetting;
+use function ModularAIAssistant\getSetting;
 
 class Usage extends MetaBox
 {
@@ -30,7 +30,7 @@ class Usage extends MetaBox
      */
     protected function getTitle()
     {
-        return __('Usage', 'modular-ai');
+        return __('Usage', 'modular-ai-assistant');
     }
 
     /**

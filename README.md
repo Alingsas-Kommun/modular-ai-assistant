@@ -1,4 +1,4 @@
-# Modular AI
+# Modular AI Assistant
 
 A WordPress plugin that integrates AI capabilities into your WordPress website. Build AI-powered modules that can analyze content, generate responses, and enhance user interactions.
 
@@ -80,7 +80,7 @@ Locally previews the production build.
 To prepare the plugin for distribution, first ensure you've built all assets using `npm run build`. Then use the WP-CLI command to create a distribution package:
 
 ```bash
-wp dist-archive . ./releases/modular-ai.zip --create-target-dir --format=zip
+wp dist-archive . ./releases/modular-ai-assistant.zip --create-target-dir --format=zip
 ```
 
 This will:
@@ -103,7 +103,7 @@ The plugin uses WordPress i18n for translations. Translation files are located i
 ```bash
 npm run translate:pot
 ```
-Scans the `app/` and `resources/` directories for translatable strings and generates a `.pot` template file at `resources/languages/modular-ai.pot`.
+Scans the `app/` and `resources/` directories for translatable strings and generates a `.pot` template file at `resources/languages/modular-ai-assistant.pot`.
 
 **Update PO Files**
 ```bash
@@ -141,7 +141,7 @@ Generates JSON translation files for JavaScript/frontend usage and runs a post-p
 
 1. Add translatable strings in your code:
    ```php
-   __('My translatable text', 'modular-ai')
+   __('My translatable text', 'modular-ai-assistant')
    ```
 2. Generate/update the POT file:
    ```bash
@@ -159,7 +159,7 @@ Generates JSON translation files for JavaScript/frontend usage and runs a post-p
 
 ## Architecture Overview
 
-ModularAI follows a modular, service provider-based architecture inspired by modern PHP frameworks.
+ModularAIAssistant follows a modular, service provider-based architecture inspired by modern PHP frameworks.
 
 ### Key Components
 
@@ -195,10 +195,10 @@ Service providers have two lifecycle methods:
 #### Creating a Service Provider
 
 ```php
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
 
 class MyServiceProvider extends ServiceProvider
 {
@@ -225,17 +225,17 @@ Entities are custom post types with associated repositories and meta boxes. The 
 3. **API Keys** (`mai_api_key`): Encrypted API credentials
 
 Each entity consists of:
-- Post type class extending `ModularAI\Abstracts\PostType`
+- Post type class extending `ModularAIAssistant\Abstracts\PostType`
 - Repository class for data access
-- MetaBox classes for admin UI extending `ModularAI\Abstracts\MetaBox`
+- MetaBox classes for admin UI extending `ModularAIAssistant\Abstracts\MetaBox`
 
 #### Creating a New Entity
 
 1. Create a post type class:
 ```php
-namespace ModularAI\Entities\MyEntity;
+namespace ModularAIAssistant\Entities\MyEntity;
 
-use ModularAI\Abstracts\PostType;
+use ModularAIAssistant\Abstracts\PostType;
 
 class MyEntity extends PostType
 {
@@ -255,7 +255,7 @@ class MyEntity extends PostType
     {
         return [
             'public' => true,
-            'show_in_menu' => 'modular-ai',
+            'show_in_menu' => 'modular-ai-assistant',
             // ... other args
         ];
     }
@@ -264,7 +264,7 @@ class MyEntity extends PostType
 
 2. Create a repository:
 ```php
-namespace ModularAI\Entities\MyEntity;
+namespace ModularAIAssistant\Entities\MyEntity;
 
 class Repository
 {
@@ -307,14 +307,14 @@ The `ContentExtractor` class (`app/Content/ContentExtractor.php`) extracts and p
 
 ### Custom HTML Content Filter
 
-The `modular_ai_custom_html_content` filter allows you to inject custom HTML content before it's converted to Markdown and sent to the AI.
+The `modular_ai_assistant_custom_html_content` filter allows you to inject custom HTML content before it's converted to Markdown and sent to the AI.
 
 **Filter Location:** `app/Content/ContentExtractor.php:73`
 
 #### Filter Parameters
 
 ```php
-apply_filters('modular_ai_custom_html_content', string $content, int $post_id, string $post_type): string
+apply_filters('modular_ai_assistant_custom_html_content', string $content, int $post_id, string $post_type): string
 ```
 
 - `$content` (string): The current HTML content
@@ -324,7 +324,7 @@ apply_filters('modular_ai_custom_html_content', string $content, int $post_id, s
 #### Example: Adding Custom Meta Fields
 
 ```php
-add_filter('modular_ai_custom_html_content', function($content, $post_id, $post_type) {
+add_filter('modular_ai_assistant_custom_html_content', function($content, $post_id, $post_type) {
     // Only add for 'product' post type
     if ($post_type !== 'product') {
         return $content;
@@ -348,7 +348,7 @@ add_filter('modular_ai_custom_html_content', function($content, $post_id, $post_
 #### Example: Adding ACF Fields
 
 ```php
-add_filter('modular_ai_custom_html_content', function($content, $post_id, $post_type) {
+add_filter('modular_ai_assistant_custom_html_content', function($content, $post_id, $post_type) {
     // Get ACF fields
     $specifications = get_field('specifications', $post_id);
     $features = get_field('features', $post_id);
@@ -378,7 +378,7 @@ add_filter('modular_ai_custom_html_content', function($content, $post_id, $post_
 #### Example: Conditional Content Based on User Role
 
 ```php
-add_filter('modular_ai_custom_html_content', function($content, $post_id, $post_type) {
+add_filter('modular_ai_assistant_custom_html_content', function($content, $post_id, $post_type) {
     // Add admin-only information if user is logged in and has appropriate role
     if (is_user_logged_in() && current_user_can('administrator')) {
         $edit_link = get_edit_post_link($post_id);
@@ -403,9 +403,9 @@ Content adapters allow integration with third-party plugins by injecting their c
 **Example Adapter Structure:**
 
 ```php
-namespace ModularAI\Content\Adapters;
+namespace ModularAIAssistant\Content\Adapters;
 
-use ModularAI\Content\Interfaces\AdapterInterface;
+use ModularAIAssistant\Content\Interfaces\AdapterInterface;
 
 class MyPluginAdapter implements AdapterInterface
 {
@@ -463,10 +463,10 @@ Service providers organize related functionality and dependencies.
 **Creating a Service Provider:**
 
 ```php
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
 
 class MyFeatureServiceProvider extends ServiceProvider
 {
@@ -494,7 +494,7 @@ class MyFeatureServiceProvider extends ServiceProvider
 
 **Register in Application:**
 
-Edit `modular-ai.php`:
+Edit `modular-ai-assistant.php`:
 
 ```php
 Application::configure()
@@ -510,24 +510,24 @@ Application::configure()
 
 ## API Endpoints
 
-The plugin registers REST API endpoints under the `/modular-ai/v1/` namespace.
+The plugin registers REST API endpoints under the `/modular-ai-assistant/v1/` namespace.
 
 ### Available Endpoints
 
-- `GET /modular-ai/v1/modules` - List all available modules
-- `GET /modular-ai/v1/models` - List all AI models
-- `POST /modular-ai/v1/module/run` - Run a module with AI
-- `POST /modular-ai/v1/model/test` - Test an AI model configuration
-- `GET /modular-ai/v1/module/template` - Get module template HTML
+- `GET /modular-ai-assistant/v1/modules` - List all available modules
+- `GET /modular-ai-assistant/v1/models` - List all AI models
+- `POST /modular-ai-assistant/v1/module/run` - Run a module with AI
+- `POST /modular-ai-assistant/v1/model/test` - Test an AI model configuration
+- `GET /modular-ai-assistant/v1/module/template` - Get module template HTML
 
 ### Creating Custom Endpoints
 
 1. Create an endpoint class:
 
 ```php
-namespace ModularAI\Api\Endpoints;
+namespace ModularAIAssistant\Api\Endpoints;
 
-use ModularAI\Api\Abstracts\Endpoint;
+use ModularAIAssistant\Api\Abstracts\Endpoint;
 
 class MyEndpoint extends Endpoint
 {
@@ -564,7 +564,7 @@ public function boot(Container $container): void
 ## File Structure
 
 ```
-modular-ai/
+modular-ai-assistant/
 ├── app/                          # PHP application code
 │   ├── Abstracts/                # Abstract base classes
 │   │   ├── MetaBox.php
@@ -601,7 +601,7 @@ modular-ai/
 │   ├── languages/                # Translation files
 │   └── views/                    # PHP templates
 ├── vendor/                       # Composer dependencies
-├── modular-ai.php             # Plugin entry point
+├── modular-ai-assistant.php             # Plugin entry point
 ├── composer.json                 # PHP dependencies
 ├── package.json                  # Node dependencies
 ├── vite.config.js               # Vite configuration
@@ -612,7 +612,7 @@ modular-ai/
 
 ### Creating a Module
 
-1. Navigate to **ModularAI > Modules** in WordPress admin
+1. Navigate to **ModularAIAssistant > Modules** in WordPress admin
 2. Click **Add New**
 3. Configure the module:
    - **System Prompt**: Instructions for the AI
@@ -626,18 +626,18 @@ modular-ai/
 Use the shortcode with your module ID:
 
 ```
-[modular-ai module_id="123"]
+[modular-ai-assistant module_id="123"]
 ```
 
 Or programmatically:
 
 ```php
-echo do_shortcode('[modular-ai module_id="123"]');
+echo do_shortcode('[modular-ai-assistant module_id="123"]');
 ```
 
 ### API Key Configuration
 
-1. Navigate to **ModularAI > API Keys**
+1. Navigate to **ModularAIAssistant > API Keys**
 2. Keys are encrypted before storage for security
 
 ---

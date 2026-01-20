@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Entities\ApiKeys\MetaBoxes;
+namespace ModularAIAssistant\Entities\ApiKeys\MetaBoxes;
 
-use ModularAI\Abstracts\MetaBox;
+use ModularAIAssistant\Abstracts\MetaBox;
 
 class Configuration extends MetaBox
 {
@@ -18,7 +18,7 @@ class Configuration extends MetaBox
      */
     protected function getTitle()
     {
-        return __('API Key Configuration', 'modular-ai');
+        return __('API Key Configuration', 'modular-ai-assistant');
     }
 
     /**
@@ -30,25 +30,25 @@ class Configuration extends MetaBox
     {
         return [
             'api_key_settings' => [
-                'label' => __('API Key Settings', 'modular-ai'),
+                'label' => __('API Key Settings', 'modular-ai-assistant'),
                 'fields' => [
                     [
                         'id' => 'api_key_value',
-                        'label' => __('API Key', 'modular-ai'),
+                        'label' => __('API Key', 'modular-ai-assistant'),
                         'type' => 'api_key',
-                        'description' => __('This key is automatically generated. Copy it to use in your API requests.', 'modular-ai')
+                        'description' => __('This key is automatically generated. Copy it to use in your API requests.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'api_key_description',
-                        'label' => __('Description', 'modular-ai'),
+                        'label' => __('Description', 'modular-ai-assistant'),
                         'type' => 'textarea',
-                        'description' => __('Optional description for this API key (e.g., "Mobile app", "External website")', 'modular-ai')
+                        'description' => __('Optional description for this API key (e.g., "Mobile app", "External website")', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'api_key_active',
-                        'label' => __('Status', 'modular-ai'),
+                        'label' => __('Status', 'modular-ai-assistant'),
                         'type' => 'checkbox',
-                        'description' => __('Enable or disable this API key', 'modular-ai'),
+                        'description' => __('Enable or disable this API key', 'modular-ai-assistant'),
                         'default' => true
                     ],
                 ],

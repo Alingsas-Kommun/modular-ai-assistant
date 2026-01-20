@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Content\Adapters;
+namespace ModularAIAssistant\Content\Adapters;
 
-use ModularAI\Content\Interfaces\AdapterInterface;
+use ModularAIAssistant\Content\Interfaces\AdapterInterface;
 use Modularity\Editor;
 use Modularity\Helper\Post as ModularityPost;
 

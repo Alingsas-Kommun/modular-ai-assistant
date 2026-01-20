@@ -15,17 +15,17 @@ if (! defined('ABSPATH')) {
 ?>
 
 <?php if (empty($modules)): ?>
-    <p><?php esc_html_e('No AI modules with editor integration enabled.', 'modular-ai'); ?></p>
+    <p><?php esc_html_e('No AI modules with editor integration enabled.', 'modular-ai-assistant'); ?></p>
 <?php else: ?>
-    <div class="modular-ai-editor-integration">
-        <p><?php esc_html_e('Analyze your content with AI to get improvement suggestions.', 'modular-ai'); ?></p>
+    <div class="modular-ai-assistant-editor-integration">
+        <p><?php esc_html_e('Analyze your content with AI to get improvement suggestions.', 'modular-ai-assistant'); ?></p>
         <p>
-            <label for="modular-ai-module-selector-<?php echo esc_attr($post_id); ?>">
-                <?php esc_html_e('Select AI Module:', 'modular-ai'); ?>
+            <label for="modular-ai-assistant-module-selector-<?php echo esc_attr($post_id); ?>">
+                <?php esc_html_e('Select AI Module:', 'modular-ai-assistant'); ?>
             </label>
         </p>
-        <select id="modular-ai-module-selector-<?php echo esc_attr($post_id); ?>" class="widefat">
-            <option value=""><?php esc_html_e('Select AI Module', 'modular-ai'); ?></option>
+        <select id="modular-ai-assistant-module-selector-<?php echo esc_attr($post_id); ?>" class="widefat">
+            <option value=""><?php esc_html_e('Select AI Module', 'modular-ai-assistant'); ?></option>
             <?php foreach ($modules as $module): ?>
                 <option value="<?php echo esc_attr($module['id']); ?>">
                     <?php echo esc_html($module['title']); ?>
@@ -34,13 +34,13 @@ if (! defined('ABSPATH')) {
         </select>
         
         <p style="margin-top: 12px;">
-            <button type="button" class="button button-primary modular-ai-analyze-btn" data-post-id="<?php echo esc_attr($post_id); ?>">
+            <button type="button" class="button button-primary modular-ai-assistant-analyze-btn" data-post-id="<?php echo esc_attr($post_id); ?>">
                 <span class="dashicons dashicons-lightbulb"></span>
-                <span><?php esc_html_e('Analyze Content', 'modular-ai'); ?></span>
+                <span><?php esc_html_e('Analyze Content', 'modular-ai-assistant'); ?></span>
             </button>
         </p>
         
-        <div id="modular-ai-editor-modal-<?php echo esc_attr($post_id); ?>" style="display: none;"></div>
+        <div id="modular-ai-assistant-editor-modal-<?php echo esc_attr($post_id); ?>" style="display: none;"></div>
     </div>
 <?php endif; ?>
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Abstracts;
+namespace ModularAIAssistant\Abstracts;
 
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Utilities\Template;
 
 if (! defined('ABSPATH')) {
     exit;

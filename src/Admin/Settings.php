@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Admin;
+namespace ModularAIAssistant\Admin;
 
-use ModularAI\Abstracts\SettingsPage;
+use ModularAIAssistant\Abstracts\SettingsPage;
 
 class Settings extends SettingsPage
 {
-    protected static $parent_slug = 'modular-ai';
-    protected static $menu_slug = 'modular-ai-settings';
+    protected static $parent_slug = 'modular-ai-assistant';
+    protected static $menu_slug = 'modular-ai-assistant-settings';
     protected static $capability = 'manage_options';
 
     /**
@@ -17,7 +17,7 @@ class Settings extends SettingsPage
      */
     protected function getTitle()
     {
-        return __('Modular AI Settings', 'modular-ai');
+        return __('Modular AI Assistant Settings', 'modular-ai-assistant');
     }
 
     /**
@@ -27,7 +27,7 @@ class Settings extends SettingsPage
      */
     protected function getMenuTitle()
     {
-        return __('Settings', 'modular-ai');
+        return __('Settings', 'modular-ai-assistant');
     }
 
     /**
@@ -39,17 +39,17 @@ class Settings extends SettingsPage
     {
         return [
             'general' => [
-                'label' => __('General', 'modular-ai'),
+                'label' => __('General', 'modular-ai-assistant'),
                 'sections' => [
                     'general_settings' => [
-                        'label' => __('Toggle Features', 'modular-ai'),
-                        'description' => __('Toggle the features of the plugin.', 'modular-ai'),
+                        'label' => __('Toggle Features', 'modular-ai-assistant'),
+                        'description' => __('Toggle the features of the plugin.', 'modular-ai-assistant'),
                         'fields' => [
                             [
                                 'id' => 'enable_shortcode',
-                                'label' => __('Enable Shortcode', 'modular-ai'),
+                                'label' => __('Enable Shortcode', 'modular-ai-assistant'),
                                 'type' => 'checkbox',
-                                'description' => __('Enable the [modular-ai] shortcode functionality.', 'modular-ai'),
+                                'description' => __('Enable the [modular-ai-assistant] shortcode functionality.', 'modular-ai-assistant'),
                                 'default' => true,
                             ],
                         ],
@@ -57,24 +57,24 @@ class Settings extends SettingsPage
                 ],
             ],
             'appearance' => [
-                'label' => __('Appearance', 'modular-ai'),
+                'label' => __('Appearance', 'modular-ai-assistant'),
                 'sections' => [
                     'color_settings' => [
-                        'label' => __('Color Settings', 'modular-ai'),
-                        'description' => __('Customize the colors used in the frontend display.', 'modular-ai'),
+                        'label' => __('Color Settings', 'modular-ai-assistant'),
+                        'description' => __('Customize the colors used in the frontend display.', 'modular-ai-assistant'),
                         'fields' => [
                             [
                                 'id' => 'primary_color',
-                                'label' => __('Primary Color', 'modular-ai'),
+                                'label' => __('Primary Color', 'modular-ai-assistant'),
                                 'type' => 'color',
-                                'description' => __('The primary color (default: purple #9333ea).', 'modular-ai'),
+                                'description' => __('The primary color (default: purple #9333ea).', 'modular-ai-assistant'),
                                 'default' => '#9333ea',
                             ],
                             [
                                 'id' => 'secondary_color',
-                                'label' => __('Secondary Color', 'modular-ai'),
+                                'label' => __('Secondary Color', 'modular-ai-assistant'),
                                 'type' => 'color',
-                                'description' => __('The secondary color (default: blue #3b82f6).', 'modular-ai'),
+                                'description' => __('The secondary color (default: blue #3b82f6).', 'modular-ai-assistant'),
                                 'default' => '#3b82f6',
                             ],
                         ],

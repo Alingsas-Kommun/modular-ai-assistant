@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Content\Utilities;
+namespace ModularAIAssistant\Content\Utilities;
 
 class HtmlProcessor
 {

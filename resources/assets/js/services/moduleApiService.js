@@ -28,11 +28,11 @@ export class ModuleApiService {
             body.streaming = streaming;
         }
         
-        const response = await fetch(modular_ai.restUrl + '/run', {
+        const response = await fetch(modular_ai_assistant.restUrl + '/run', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'X-WP-Nonce': modular_ai.restNonce
+                'X-WP-Nonce': modular_ai_assistant.restNonce
             },
             body: JSON.stringify(body)
         });

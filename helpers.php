@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI;
+namespace ModularAIAssistant;
 
-use ModularAI\Utilities\Container;
+use ModularAIAssistant\Utilities\Container;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -60,7 +60,7 @@ function get_plugin_version(): string
     static $version = null;
     
     if ($version === null) {
-        $plugin_data = \get_plugin_data(config('paths.plugin_path') . 'modular-ai.php');
+        $plugin_data = \get_plugin_data(config('paths.plugin_path') . 'modular-ai-assistant.php');
         $version = $plugin_data['Version'];
     }
     

@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Entities\ApiKeys;
+namespace ModularAIAssistant\Entities\ApiKeys;
 
-use ModularAI\Abstracts\PostType;
+use ModularAIAssistant\Abstracts\PostType;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -35,19 +35,19 @@ class ApiKey extends PostType
     protected function getLabels()
     {
         return [
-            'name'                  => _x('API Keys', 'Post type general name', 'modular-ai'),
-            'singular_name'         => _x('API Key', 'Post type singular name', 'modular-ai'),
-            'menu_name'             => _x('API Keys', 'Admin Menu text', 'modular-ai'),
-            'name_admin_bar'        => _x('API Key', 'Add New on Toolbar', 'modular-ai'),
-            'add_new'               => __('Add New', 'modular-ai'),
-            'add_new_item'          => __('Add New API Key', 'modular-ai'),
-            'new_item'              => __('New API Key', 'modular-ai'),
-            'edit_item'             => __('Edit API Key', 'modular-ai'),
-            'view_item'             => __('View API Key', 'modular-ai'),
-            'all_items'             => __('API Keys', 'modular-ai'),
-            'search_items'          => __('Search API Keys', 'modular-ai'),
-            'not_found'             => __('No API keys found.', 'modular-ai'),
-            'not_found_in_trash'    => __('No API keys found in Trash.', 'modular-ai'),
+            'name'                  => _x('API Keys', 'Post type general name', 'modular-ai-assistant'),
+            'singular_name'         => _x('API Key', 'Post type singular name', 'modular-ai-assistant'),
+            'menu_name'             => _x('API Keys', 'Admin Menu text', 'modular-ai-assistant'),
+            'name_admin_bar'        => _x('API Key', 'Add New on Toolbar', 'modular-ai-assistant'),
+            'add_new'               => __('Add New', 'modular-ai-assistant'),
+            'add_new_item'          => __('Add New API Key', 'modular-ai-assistant'),
+            'new_item'              => __('New API Key', 'modular-ai-assistant'),
+            'edit_item'             => __('Edit API Key', 'modular-ai-assistant'),
+            'view_item'             => __('View API Key', 'modular-ai-assistant'),
+            'all_items'             => __('API Keys', 'modular-ai-assistant'),
+            'search_items'          => __('Search API Keys', 'modular-ai-assistant'),
+            'not_found'             => __('No API keys found.', 'modular-ai-assistant'),
+            'not_found_in_trash'    => __('No API keys found in Trash.', 'modular-ai-assistant'),
         ];
     }
 
@@ -58,7 +58,7 @@ class ApiKey extends PostType
      */
     protected function getDescription()
     {
-        return __('API keys for external access', 'modular-ai');
+        return __('API keys for external access', 'modular-ai-assistant');
     }
 
     /**
@@ -71,22 +71,22 @@ class ApiKey extends PostType
         return [
             [
                 'slug' => 'api_key',
-                'title' => __('API Key', 'modular-ai'),
+                'title' => __('API Key', 'modular-ai-assistant'),
                 'priority' => 2,
             ],
             [
                 'slug' => 'status',
-                'title' => __('Status', 'modular-ai'),
+                'title' => __('Status', 'modular-ai-assistant'),
                 'priority' => 3,
             ],
             [
                 'slug' => 'created',
-                'title' => __('Created', 'modular-ai'),
+                'title' => __('Created', 'modular-ai-assistant'),
                 'priority' => 4,
             ],
             [
                 'slug' => 'last_used',
-                'title' => __('Last Used', 'modular-ai'),
+                'title' => __('Last Used', 'modular-ai-assistant'),
                 'priority' => 5,
             ],
         ];
@@ -104,7 +104,7 @@ class ApiKey extends PostType
         if ($api_key) {
             echo '<code>' . esc_html(substr($api_key, 0, 8)) . '...' . esc_html(substr($api_key, -4)) . '</code>';
         } else {
-            echo '<em>' . esc_html__('Not generated', 'modular-ai') . '</em>';
+            echo '<em>' . esc_html__('Not generated', 'modular-ai-assistant') . '</em>';
         }
     }
 
@@ -118,9 +118,9 @@ class ApiKey extends PostType
     {
         $active = get_post_meta($post_id, '_mai_api_key_active', true);
         if ($active) {
-            echo '<span style="color: green;">●</span> ' . esc_html__('Active', 'modular-ai');
+            echo '<span style="color: green;">●</span> ' . esc_html__('Active', 'modular-ai-assistant');
         } else {
-            echo '<span style="color: red;">●</span> ' . esc_html__('Inactive', 'modular-ai');
+            echo '<span style="color: red;">●</span> ' . esc_html__('Inactive', 'modular-ai-assistant');
         }
     }
 
@@ -148,7 +148,7 @@ class ApiKey extends PostType
         if ($last_used) {
             echo esc_html(date_i18n('Y-m-d H:i', $last_used));
         } else {
-            echo '<em>' . esc_html__('Never', 'modular-ai') . '</em>';
+            echo '<em>' . esc_html__('Never', 'modular-ai-assistant') . '</em>';
         }
     }
 

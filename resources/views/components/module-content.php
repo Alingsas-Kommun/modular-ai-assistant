@@ -13,20 +13,20 @@ if (! defined('ABSPATH')) {
 }
 ?>
 
-<div x-show="loading" class="modular-ai-loading">
-    <div class="modular-ai-skeleton"></div>
-    <div class="modular-ai-skeleton"></div>
-    <div class="modular-ai-skeleton"></div>
-    <div class="modular-ai-skeleton"></div>
+<div x-show="loading" class="modular-ai-assistant-loading">
+    <div class="modular-ai-assistant-skeleton"></div>
+    <div class="modular-ai-assistant-skeleton"></div>
+    <div class="modular-ai-assistant-skeleton"></div>
+    <div class="modular-ai-assistant-skeleton"></div>
 </div>
 
-<div x-show="error" class="modular-ai-error" x-text="error" x-cloak></div>
+<div x-show="error" class="modular-ai-assistant-error" x-text="error" x-cloak></div>
 
-<div x-show="response && !loading" class="modular-ai-response" x-html="response" x-cloak></div>
+<div x-show="response && !loading" class="modular-ai-assistant-response" x-html="response" x-cloak></div>
 
 <?php if ($context === 'frontend' && $show_curl): ?>
-    <div x-show="curlPreview && !loading" class="modular-ai-curl-container" x-cloak>
-        <pre class="modular-ai-curl-command" x-text="curlPreview"></pre>
+    <div x-show="curlPreview && !loading" class="modular-ai-assistant-curl-container" x-cloak>
+        <pre class="modular-ai-assistant-curl-command" x-text="curlPreview"></pre>
     </div>
 <?php endif; ?>
 

@@ -3,8 +3,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const DOMAIN = 'modular-ai';
-const HANDLES = ['modular-ai-admin', 'modular-ai-frontend'];
+const DOMAIN = 'modular-ai-assistant';
+const HANDLES = ['modular-ai-assistant-admin', 'modular-ai-assistant-frontend'];
 const LANG_DIR = './resources/languages';
 
 // Helper functions

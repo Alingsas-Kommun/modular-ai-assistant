@@ -100,7 +100,7 @@ document.addEventListener('alpine:init', () => {
                 }
                 
             } catch (err) {
-                this.error = err.message || __('Something went wrong. Please try again later.', 'modular-ai');
+                this.error = err.message || __('Something went wrong. Please try again later.', 'modular-ai-assistant');
                 this.loading = false;
             }
         },
@@ -170,7 +170,7 @@ document.addEventListener('alpine:init', () => {
                         if (!this.isCached && this.animator && (this.animator.getDisplayedText() || this.animator.hasPendingText())) {
                             // Show partial results
                             this.animator.stop();
-                            this.error = __('Stream interrupted:', 'modular-ai') + ' ' + message;
+                            this.error = __('Stream interrupted:', 'modular-ai-assistant') + ' ' + message;
                         } else {
                             this.error = message;
                             this.response = null;
@@ -184,9 +184,9 @@ document.addEventListener('alpine:init', () => {
                 // Handle stream reading error
                 if (!this.isCached && this.animator && (this.animator.getDisplayedText() || this.animator.hasPendingText())) {
                     this.animator.stop();
-                    this.error = __('Stream interrupted', 'modular-ai');
+                    this.error = __('Stream interrupted', 'modular-ai-assistant');
                 } else {
-                    this.error = __('Failed to read stream', 'modular-ai');
+                    this.error = __('Failed to read stream', 'modular-ai-assistant');
                 }
             } finally {
                 this.loading = false;
@@ -202,7 +202,7 @@ document.addEventListener('alpine:init', () => {
             const data = await response.json();
             
             if (!response.ok) {
-                throw new Error(data.message || __('Request failed', 'modular-ai'));
+                throw new Error(data.message || __('Request failed', 'modular-ai-assistant'));
             }
             
             this.response = data.content;

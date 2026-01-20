@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Abstracts;
+namespace ModularAIAssistant\Abstracts;
 
-use ModularAI\Utilities\Container;
+use ModularAIAssistant\Utilities\Container;
 
 abstract class ServiceProvider
 {

@@ -11,7 +11,7 @@ if (! defined('ABSPATH')) {
 ?>
 
 <div x-data="modelTest">
-    <p><?php esc_html_e('Click the button to test if the model can be reached with current settings.', 'modular-ai'); ?></p>
+    <p><?php esc_html_e('Click the button to test if the model can be reached with current settings.', 'modular-ai-assistant'); ?></p>
 
     <p>
         <button 
@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
             @click="testModel(<?php echo esc_attr($post->ID); ?>)"
             :disabled="loading"
         >
-            <span x-text="loading ? '<?php esc_attr_e('Testing...', 'modular-ai'); ?>' : '<?php esc_attr_e('Test Model', 'modular-ai'); ?>'"></span>
+            <span x-text="loading ? '<?php esc_attr_e('Testing...', 'modular-ai-assistant'); ?>' : '<?php esc_attr_e('Test Model', 'modular-ai-assistant'); ?>'"></span>
         </button>
     </p>
 

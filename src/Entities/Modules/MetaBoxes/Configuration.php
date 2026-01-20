@@ -1,12 +1,12 @@
 <?php
 
-namespace ModularAI\Entities\Modules\MetaBoxes;
+namespace ModularAIAssistant\Entities\Modules\MetaBoxes;
 
-use ModularAI\Abstracts\MetaBox;
-use ModularAI\Entities\Models\Repository as ModelsRepository;
-use ModularAI\Services\ModuleCacheService;
+use ModularAIAssistant\Abstracts\MetaBox;
+use ModularAIAssistant\Entities\Models\Repository as ModelsRepository;
+use ModularAIAssistant\Services\ModuleCacheService;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class Configuration extends MetaBox
 {
@@ -22,7 +22,7 @@ class Configuration extends MetaBox
      */
     protected function getTitle()
     {
-        return __('Module Configuration', 'modular-ai');
+        return __('Module Configuration', 'modular-ai-assistant');
     }
 
     /**
@@ -35,7 +35,7 @@ class Configuration extends MetaBox
         $modelsRepository = di(ModelsRepository::class);
         $models = $modelsRepository->findActive();
         
-        $model_options = ['' => __('— Select Model —', 'modular-ai')];
+        $model_options = ['' => __('— Select Model —', 'modular-ai-assistant')];
         foreach ($models as $model) {
             $label = $model['title'];
             if (!empty($model['model_id'])) {
@@ -46,94 +46,94 @@ class Configuration extends MetaBox
         
         return [
             'basic_configuration' => [
-                'label' => __('Basic Configuration', 'modular-ai'),
+                'label' => __('Basic Configuration', 'modular-ai-assistant'),
                 'fields' => [
                     [
                         'id' => 'model_ref',
-                        'label' => __('AI Model', 'modular-ai'),
+                        'label' => __('AI Model', 'modular-ai-assistant'),
                         'type' => 'select',
                         'required' => true,
                         'options' => $model_options,
-                        'description' => __('Select which AI model to use for this module.', 'modular-ai')
+                        'description' => __('Select which AI model to use for this module.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'system',
-                        'label' => __('System Prompt', 'modular-ai'),
+                        'label' => __('System Prompt', 'modular-ai-assistant'),
                         'type' => 'textarea',
                         'rows' => 6,
                         'required' => true,
-                        'description' => __('Instructions for the AI. This defines the AI\'s role and behavior.', 'modular-ai')
+                        'description' => __('Instructions for the AI. This defines the AI\'s role and behavior.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'user_prompt_type',
-                        'label' => __('Content Source', 'modular-ai'),
+                        'label' => __('Content Source', 'modular-ai-assistant'),
                         'type' => 'select',
                         'default' => 'custom',
                         'options' => [
-                            'custom' => __('Custom text (below)', 'modular-ai'),
-                            'page_content' => __('All page text', 'modular-ai'),
-                            'page_title' => __('Page title only', 'modular-ai'),
-                            'page_excerpt' => __('Page excerpt only', 'modular-ai'),
+                            'custom' => __('Custom text (below)', 'modular-ai-assistant'),
+                            'page_content' => __('All page text', 'modular-ai-assistant'),
+                            'page_title' => __('Page title only', 'modular-ai-assistant'),
+                            'page_excerpt' => __('Page excerpt only', 'modular-ai-assistant'),
                         ],
-                        'description' => __('What content should be sent to the AI?', 'modular-ai')
+                        'description' => __('What content should be sent to the AI?', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'user',
-                        'label' => __('Custom Text', 'modular-ai'),
+                        'label' => __('Custom Text', 'modular-ai-assistant'),
                         'type' => 'textarea',
                         'rows' => 4,
-                        'description' => __('Used only if "Custom text" is selected above.', 'modular-ai')
+                        'description' => __('Used only if "Custom text" is selected above.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'output',
-                        'label' => __('Output Format', 'modular-ai'),
+                        'label' => __('Output Format', 'modular-ai-assistant'),
                         'type' => 'select',
                         'default' => 'plain',
                         'options' => [
-                            'plain' => __('Plain Text (escaped)', 'modular-ai'),
-                            'html' => __('HTML (sanitized)', 'modular-ai'),
+                            'plain' => __('Plain Text (escaped)', 'modular-ai-assistant'),
+                            'html' => __('HTML (sanitized)', 'modular-ai-assistant'),
                         ],
-                        'description' => __('How should the AI response be formatted?', 'modular-ai')
+                        'description' => __('How should the AI response be formatted?', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'markdown_enabled',
-                        'label' => __('Markdown', 'modular-ai'),
+                        'label' => __('Markdown', 'modular-ai-assistant'),
                         'type' => 'checkbox',
-                        'checkbox_label' => __('Enable markdown formatting', 'modular-ai'),
+                        'checkbox_label' => __('Enable markdown formatting', 'modular-ai-assistant'),
                         'default' => false,
-                        'description' => __('Convert markdown syntax to HTML in AI responses.', 'modular-ai')
+                        'description' => __('Convert markdown syntax to HTML in AI responses.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'editor_analysis_enabled',
-                        'label' => __('Editor Integration', 'modular-ai'),
+                        'label' => __('Editor Integration', 'modular-ai-assistant'),
                         'type' => 'checkbox',
-                        'checkbox_label' => __('Enable AI analysis button in the editor', 'modular-ai'),
+                        'checkbox_label' => __('Enable AI analysis button in the editor', 'modular-ai-assistant'),
                         'default' => false,
-                        'description' => __('Adds an analysis button in the editor that uses this AI module to analyze content.', 'modular-ai')
+                        'description' => __('Adds an analysis button in the editor that uses this AI module to analyze content.', 'modular-ai-assistant')
                     ],
                     [
                         'id' => 'streaming_override',
-                        'label' => __('Streaming', 'modular-ai'),
+                        'label' => __('Streaming', 'modular-ai-assistant'),
                         'type' => 'select',
                         'default' => 'model_default',
                         'options' => [
-                            'model_default' => __('Use model default', 'modular-ai'),
-                            'enabled' => __('Enabled', 'modular-ai'),
-                            'disabled' => __('Disabled', 'modular-ai'),
+                            'model_default' => __('Use model default', 'modular-ai-assistant'),
+                            'enabled' => __('Enabled', 'modular-ai-assistant'),
+                            'disabled' => __('Disabled', 'modular-ai-assistant'),
                         ],
-                        'description' => __('Control how responses are delivered. Streaming shows content as it generates. Instant is better for short responses or cached content.', 'modular-ai')
+                        'description' => __('Control how responses are delivered. Streaming shows content as it generates. Instant is better for short responses or cached content.', 'modular-ai-assistant')
                     ],
                 ]
             ],
             'cache' => [
-                'label' => __('Cache', 'modular-ai'),
+                'label' => __('Cache', 'modular-ai-assistant'),
                 'fields' => [
                     [
                         'id' => 'cache_ttl',
-                        'label' => __('Cache TTL', 'modular-ai'),
+                        'label' => __('Cache TTL', 'modular-ai-assistant'),
                         'type' => 'number',
                         'default' => 0,
-                        'description' => __('Cache duration in seconds. Use 0 to turn off caching.', 'modular-ai')
+                        'description' => __('Cache duration in seconds. Use 0 to turn off caching.', 'modular-ai-assistant')
                     ],
                 ],
             ]

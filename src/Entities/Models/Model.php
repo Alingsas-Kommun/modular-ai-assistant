@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Entities\Models;
+namespace ModularAIAssistant\Entities\Models;
 
-use ModularAI\Abstracts\PostType;
+use ModularAIAssistant\Abstracts\PostType;
 
 class Model extends PostType
 {
@@ -17,26 +17,26 @@ class Model extends PostType
     protected function getLabels()
     {
         return [
-            'name'                  => _x('Models', 'Post type general name', 'modular-ai'),
-            'singular_name'         => _x('Model', 'Post type singular name', 'modular-ai'),
-            'menu_name'             => _x('Models', 'Admin Menu text', 'modular-ai'),
-            'name_admin_bar'        => _x('Model', 'Add New on Toolbar', 'modular-ai'),
-            'add_new'               => __('Add New', 'modular-ai'),
-            'add_new_item'          => __('Add New Model', 'modular-ai'),
-            'new_item'              => __('New Model', 'modular-ai'),
-            'edit_item'             => __('Edit Model', 'modular-ai'),
-            'view_item'             => __('View Model', 'modular-ai'),
-            'all_items'             => __('Models', 'modular-ai'),
-            'search_items'          => __('Search Models', 'modular-ai'),
-            'parent_item_colon'     => __('Parent Models:', 'modular-ai'),
-            'not_found'             => __('No models found.', 'modular-ai'),
-            'not_found_in_trash'    => __('No models found in Trash.', 'modular-ai'),
-            'archives'              => __('Model archives', 'modular-ai'),
-            'insert_into_item'      => __('Insert into model', 'modular-ai'),
-            'uploaded_to_this_item' => __('Uploaded to this model', 'modular-ai'),
-            'filter_items_list'     => __('Filter models list', 'modular-ai'),
-            'items_list_navigation' => __('Models list navigation', 'modular-ai'),
-            'items_list'            => __('Models list', 'modular-ai'),
+            'name'                  => _x('Models', 'Post type general name', 'modular-ai-assistant'),
+            'singular_name'         => _x('Model', 'Post type singular name', 'modular-ai-assistant'),
+            'menu_name'             => _x('Models', 'Admin Menu text', 'modular-ai-assistant'),
+            'name_admin_bar'        => _x('Model', 'Add New on Toolbar', 'modular-ai-assistant'),
+            'add_new'               => __('Add New', 'modular-ai-assistant'),
+            'add_new_item'          => __('Add New Model', 'modular-ai-assistant'),
+            'new_item'              => __('New Model', 'modular-ai-assistant'),
+            'edit_item'             => __('Edit Model', 'modular-ai-assistant'),
+            'view_item'             => __('View Model', 'modular-ai-assistant'),
+            'all_items'             => __('Models', 'modular-ai-assistant'),
+            'search_items'          => __('Search Models', 'modular-ai-assistant'),
+            'parent_item_colon'     => __('Parent Models:', 'modular-ai-assistant'),
+            'not_found'             => __('No models found.', 'modular-ai-assistant'),
+            'not_found_in_trash'    => __('No models found in Trash.', 'modular-ai-assistant'),
+            'archives'              => __('Model archives', 'modular-ai-assistant'),
+            'insert_into_item'      => __('Insert into model', 'modular-ai-assistant'),
+            'uploaded_to_this_item' => __('Uploaded to this model', 'modular-ai-assistant'),
+            'filter_items_list'     => __('Filter models list', 'modular-ai-assistant'),
+            'items_list_navigation' => __('Models list navigation', 'modular-ai-assistant'),
+            'items_list'            => __('Models list', 'modular-ai-assistant'),
         ];
     }
 
@@ -47,7 +47,7 @@ class Model extends PostType
      */
     protected function getDescription()
     {
-        return __('AI models configuration', 'modular-ai');
+        return __('AI models configuration', 'modular-ai-assistant');
     }
 
     /**
@@ -60,22 +60,22 @@ class Model extends PostType
         return [
             [
                 'slug' => 'model_id',
-                'title' => __('Model ID', 'modular-ai'),
+                'title' => __('Model ID', 'modular-ai-assistant'),
                 'priority' => 2,
             ],
             [
                 'slug' => 'endpoint',
-                'title' => __('Endpoint', 'modular-ai'),
+                'title' => __('Endpoint', 'modular-ai-assistant'),
                 'priority' => 3,
             ],
             [
                 'slug' => 'streaming',
-                'title' => __('Streaming', 'modular-ai'),
+                'title' => __('Streaming', 'modular-ai-assistant'),
                 'priority' => 4,
             ],
             [
                 'slug' => 'active',
-                'title' => __('Active', 'modular-ai'),
+                'title' => __('Active', 'modular-ai-assistant'),
                 'priority' => 5,
             ],
         ];

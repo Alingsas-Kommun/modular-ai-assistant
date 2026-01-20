@@ -11,10 +11,10 @@ if (! defined('ABSPATH')) {
 }
 ?>
 
-<style id="modular-ai-custom-colors">
+<style id="modular-ai-assistant-custom-colors">
     :root {
-        --modular-ai-primary-color: <?php echo esc_attr($primary_color); ?>;
-        --modular-ai-secondary-color: <?php echo esc_attr($secondary_color); ?>;
+        --modular-ai-assistant-primary-color: <?php echo esc_attr($primary_color); ?>;
+        --modular-ai-assistant-secondary-color: <?php echo esc_attr($secondary_color); ?>;
     }
 </style>
 

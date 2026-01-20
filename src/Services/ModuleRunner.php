@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Services;
+namespace ModularAIAssistant\Services;
 
-use ModularAI\Entities\Modules\Repository as ModulesRepository;
-use ModularAI\Http\Clients\OpenAIClient;
-use ModularAI\Content\ContentExtractor;
-use ModularAI\Utilities\Markdown;
+use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
+use ModularAIAssistant\Http\Clients\OpenAIClient;
+use ModularAIAssistant\Content\ContentExtractor;
+use ModularAIAssistant\Utilities\Markdown;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class ModuleRunner
 {
@@ -49,7 +49,7 @@ class ModuleRunner
         // Get module settings
         $module = $this->modulesRepository->find($module_id);
         if (!$module) {
-            return $this->error('mai_module_not_found', __('Module not found', 'modular-ai'), 404);
+            return $this->error('mai_module_not_found', __('Module not found', 'modular-ai-assistant'), 404);
         }
 
         // Get associated model
@@ -58,7 +58,7 @@ class ModuleRunner
         if (!$model) {
             return $this->error(
                 'mai_model_not_found',
-                __('Model not found. Please ensure a model is selected for this module.', 'modular-ai'),
+                __('Model not found. Please ensure a model is selected for this module.', 'modular-ai-assistant'),
                 400
             );
         }
@@ -67,7 +67,7 @@ class ModuleRunner
             return $this->error(
                 'mai_model_inactive',
                 /* Translators: 1: Model title */
-                sprintf(__('Model "%s" is inactive. Please activate it in the Models settings.', 'modular-ai'), $model['title'] ?? 'Unknown'),
+                sprintf(__('Model "%s" is inactive. Please activate it in the Models settings.', 'modular-ai-assistant'), $model['title'] ?? 'Unknown'),
                 400
             );
         }
@@ -76,7 +76,7 @@ class ModuleRunner
         $user_content = $this->getUserContent($module, $query, $post_id);
 
         if (empty($user_content)) {
-            return $this->error('mai_no_content', __('No question or content provided', 'modular-ai'), 400);
+            return $this->error('mai_no_content', __('No question or content provided', 'modular-ai-assistant'), 400);
         }
 
         // Build messages array
@@ -154,7 +154,7 @@ class ModuleRunner
 
         // Final fallback
         if (empty($user_content)) {
-            $user_content = __('Analyze the content on this page.', 'modular-ai');
+            $user_content = __('Analyze the content on this page.', 'modular-ai-assistant');
         }
 
         return $user_content;

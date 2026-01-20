@@ -5,6 +5,6 @@ if (!defined('ABSPATH')) {
 }
 
 return [
-    'name' => 'modular-ai',
-    'version' => function_exists('ModularAI\get_plugin_version') ? \ModularAI\get_plugin_version() : '1.0.0',
+    'name' => 'modular-ai-assistant',
+    'version' => function_exists('ModularAIAssistant\get_plugin_version') ? \ModularAIAssistant\get_plugin_version() : '1.0.0',
 ]; 

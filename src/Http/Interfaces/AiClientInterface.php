@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Http\Interfaces;
+namespace ModularAIAssistant\Http\Interfaces;
 
 interface AiClientInterface
 {

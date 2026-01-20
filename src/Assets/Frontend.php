@@ -1,11 +1,11 @@
 <?php
 
-namespace ModularAI\Assets;
+namespace ModularAIAssistant\Assets;
 
-use ModularAI\Utilities\ViteManifest;
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Utilities\ViteManifest;
+use ModularAIAssistant\Utilities\Template;
 
-use function ModularAI\{config, di, getSetting};
+use function ModularAIAssistant\{config, di, getSetting};
 
 if (! defined('ABSPATH')) {
     exit;
@@ -38,7 +38,7 @@ class Frontend
     
         if ($frontendJs) {
             wp_enqueue_script(
-                'modular-ai-frontend',
+                'modular-ai-assistant-frontend',
                 config('paths.plugin_url') . 'dist/' . $frontendJs,
                 [],
                 config('app.version'),
@@ -50,23 +50,23 @@ class Frontend
             
             // Add type="module" attribute
             add_filter('script_loader_tag', function($tag, $handle) {
-                if ($handle === 'modular-ai-frontend') {
+                if ($handle === 'modular-ai-assistant-frontend') {
                     return str_replace(' src', ' type="module" src', $tag);
                 }
                 return $tag;
             }, 10, 2);
             
-            wp_localize_script('modular-ai-frontend', 'modular_ai', [
+            wp_localize_script('modular-ai-assistant-frontend', 'modular_ai_assistant', [
                 'restNonce' => wp_create_nonce('wp_rest'),
-                'restUrl' => esc_url_raw(rest_url()) . 'modular-ai/v1',
+                'restUrl' => esc_url_raw(rest_url()) . 'modular-ai-assistant/v1',
             ]);
 
-            wp_set_script_translations('modular-ai-frontend', 'modular-ai', config('paths.plugin_path') . 'resources/languages/');
+            wp_set_script_translations('modular-ai-assistant-frontend', 'modular-ai-assistant', config('paths.plugin_path') . 'resources/languages/');
         }
     
         foreach ($frontendCss as $index => $cssFile) {
             wp_enqueue_style(
-                'modular-ai-frontend-' . $index,
+                'modular-ai-assistant-frontend-' . $index,
                 config('paths.plugin_url') . 'dist/' . $cssFile,
                 [],
                 config('app.version'),

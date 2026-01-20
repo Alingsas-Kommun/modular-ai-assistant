@@ -14,8 +14,8 @@ document.addEventListener('alpine:init', () => {
                     await navigator.clipboard.writeText(input.value);
                     this.showCopied();
                 } catch (err) {
-                    console.error(__('Failed to copy:', 'modular-ai'), err);
-                    alert(__('Failed to copy to clipboard', 'modular-ai'));
+                    console.error(__('Failed to copy:', 'modular-ai-assistant'), err);
+                    alert(__('Failed to copy to clipboard', 'modular-ai-assistant'));
                 }
             }
         },
@@ -33,7 +33,7 @@ document.addEventListener('alpine:init', () => {
             }
             
             // Confirm before regenerating
-            if (!confirm(__('Are you sure you want to regenerate this API key? The old key will no longer work.', 'modular-ai'))) {
+            if (!confirm(__('Are you sure you want to regenerate this API key? The old key will no longer work.', 'modular-ai-assistant'))) {
                 return;
             }
             
@@ -61,7 +61,7 @@ document.addEventListener('alpine:init', () => {
                         this.copied = false;
                     }, 2000);
                 } catch (err) {
-                    console.error(__('Failed to regenerate API key:', 'modular-ai'), err);
+                    console.error(__('Failed to regenerate API key:', 'modular-ai-assistant'), err);
                     alert(__('Failed to regenerate API key') + ': ' + err.message);
                 } finally {
                     this.regenerating = false;

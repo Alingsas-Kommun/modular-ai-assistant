@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Content;
+namespace ModularAIAssistant\Content;
 
-use ModularAI\Content\Interfaces\AdapterInterface;
+use ModularAIAssistant\Content\Interfaces\AdapterInterface;
 
 class Adapters
 {
@@ -76,7 +76,7 @@ class Adapters
     public static function getAdapterClasses(): array
     {
         $files = self::getAdapterFiles();
-        $namespace = 'ModularAI\\Content\\Adapters\\';
+        $namespace = 'ModularAIAssistant\\Content\\Adapters\\';
 
         return array_map(function($file) use ($namespace) {
             return $namespace . basename($file, '.php');

@@ -17,12 +17,12 @@ if (! defined('ABSPATH')) {
 }
 ?>
 
-<div class="modular-ai-field-stacked" style="margin-bottom: 20px;">
+<div class="modular-ai-assistant-field-stacked" style="margin-bottom: 20px;">
     <label for="<?php echo esc_attr($field_id); ?>" style="display: block; margin-bottom: 5px; font-weight: 600;">
         <?php echo esc_html($field['label']); ?><?php echo wp_kses_post($required_mark); ?>
     </label>
     
-    <div class="modular-ai-field-input">
+    <div class="modular-ai-assistant-field-input">
         <?php
         $metabox->loadFieldTemplate($field['type'], [
             'field_id' => $field_id,

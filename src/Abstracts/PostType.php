@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Abstracts;
+namespace ModularAIAssistant\Abstracts;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -12,7 +12,7 @@ abstract class PostType
     protected static $public = false;
     protected static $publicly_queryable = false;
     protected static $show_ui = true;
-    protected static $show_in_menu = 'modular-ai';
+    protected static $show_in_menu = 'modular-ai-assistant';
     protected static $show_in_rest = true;
     protected static $supports = ['title', 'revisions'];
     protected static $menu_icon = 'dashicons-admin-generic';
@@ -77,7 +77,7 @@ abstract class PostType
         }
 
         // Re-add date at the end
-        $columns['date'] = __('Date', 'modular-ai');
+        $columns['date'] = __('Date', 'modular-ai-assistant');
 
         return $columns;
     }

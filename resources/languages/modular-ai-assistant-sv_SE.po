@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ModularAI 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modular-ai\n"
+"Project-Id-Version: ModularAIAssistant 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modular-ai-assistant\n"
 "POT-Creation-Date: 2025-10-21T13:13:29+00:00\n"
-"PO-Revision-Date: 2025-11-03 13:06+0100\n"
+"PO-Revision-Date: 2026-01-16 12:28+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sv_SE\n"
@@ -11,24 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.8\n"
-"X-Domain: modular-ai\n"
+"X-Domain: modular-ai-assistant\n"
 
 #. Plugin Name of the plugin
-#: modular-ai.php src/Admin/Menu.php:25 src/Admin/Menu.php:26
-msgid "Modular AI"
-msgstr "Modular AI"
+#: modular-ai-assistant.php src/Admin/Menu.php:29 src/Admin/Menu.php:30
+msgid "Modular AI Assistant"
+msgstr "Modular AI Assistant"
 
-#. Description of the plugin
-#: modular-ai.php
-msgid "WordPress plugin that let's you integrate AI into your wordpress website"
-msgstr "WordPress-plugin som låter dig integrera AI i din WordPress-webbplats"
-
-#: src/Admin/EditorIntegration.php:31 src/Api/Endpoints/ModuleTemplate.php:89
+#: src/Admin/EditorIntegration.php:35 src/Api/Endpoints/ModuleTemplate.php:89
 msgid "AI Content Analysis"
 msgstr "AI-innehållsanalys"
 
 #. Translators: 1: Parameter name
-#: src/Api/Abstracts/Endpoint.php:131
+#: src/Api/Abstracts/Endpoint.php:135
 #, php-format
 msgid "Missing required parameter: %s"
 msgstr "Obligatorisk parameter saknas: %s"
@@ -62,101 +57,101 @@ msgstr "Endpoint-URL saknas"
 msgid "API key missing"
 msgstr "API-nyckel saknas"
 
-#: src/Entities/ApiKeys/ApiKey.php:34
+#: src/Entities/ApiKeys/ApiKey.php:38
 msgctxt "Post type general name"
 msgid "API Keys"
 msgstr "API nycklar"
 
-#: src/Entities/ApiKeys/ApiKey.php:35
+#: src/Entities/ApiKeys/ApiKey.php:39
 msgctxt "Post type singular name"
 msgid "API Key"
 msgstr "API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:36
+#: src/Entities/ApiKeys/ApiKey.php:40
 msgctxt "Admin Menu text"
 msgid "API Keys"
 msgstr "API nycklar"
 
-#: src/Entities/ApiKeys/ApiKey.php:37
+#: src/Entities/ApiKeys/ApiKey.php:41
 msgctxt "Add New on Toolbar"
 msgid "API Key"
 msgstr "API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:38 src/Entities/Models/Model.php:24
+#: src/Entities/ApiKeys/ApiKey.php:42 src/Entities/Models/Model.php:24
 #: src/Entities/Modules/Module.php:24
 msgid "Add New"
 msgstr "Lägg till ny"
 
-#: src/Entities/ApiKeys/ApiKey.php:39
+#: src/Entities/ApiKeys/ApiKey.php:43
 msgid "Add New API Key"
 msgstr "Lägg till ny API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:40
+#: src/Entities/ApiKeys/ApiKey.php:44
 msgid "New API Key"
 msgstr "Ny API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:41
+#: src/Entities/ApiKeys/ApiKey.php:45
 msgid "Edit API Key"
 msgstr "Redigera API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:42
+#: src/Entities/ApiKeys/ApiKey.php:46
 msgid "View API Key"
 msgstr "Visa API nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:43
+#: src/Entities/ApiKeys/ApiKey.php:47
 msgid "API Keys"
 msgstr "API nycklar"
 
-#: src/Entities/ApiKeys/ApiKey.php:44
+#: src/Entities/ApiKeys/ApiKey.php:48
 msgid "Search API Keys"
 msgstr "Sök API nycklar"
 
-#: src/Entities/ApiKeys/ApiKey.php:45
+#: src/Entities/ApiKeys/ApiKey.php:49
 msgid "No API keys found."
 msgstr "Inga API-nycklar hittades."
 
-#: src/Entities/ApiKeys/ApiKey.php:46
+#: src/Entities/ApiKeys/ApiKey.php:50
 msgid "No API keys found in Trash."
 msgstr "Inga API-nycklar hittades i papperskorgen."
 
-#: src/Entities/ApiKeys/ApiKey.php:57
+#: src/Entities/ApiKeys/ApiKey.php:61
 msgid "API keys for external access"
 msgstr "API-nycklar för extern åtkomst"
 
-#: src/Entities/ApiKeys/ApiKey.php:70
+#: src/Entities/ApiKeys/ApiKey.php:74
 #: src/Entities/ApiKeys/MetaBoxes/Configuration.php:37
 #: src/Entities/Models/MetaBoxes/Configuration.php:51
 msgid "API Key"
 msgstr "API-nyckel"
 
-#: src/Entities/ApiKeys/ApiKey.php:75
+#: src/Entities/ApiKeys/ApiKey.php:79
 #: src/Entities/ApiKeys/MetaBoxes/Configuration.php:49
 msgid "Status"
 msgstr "Status"
 
-#: src/Entities/ApiKeys/ApiKey.php:80
+#: src/Entities/ApiKeys/ApiKey.php:84
 msgid "Created"
 msgstr "Skapad"
 
-#: src/Entities/ApiKeys/ApiKey.php:85
+#: src/Entities/ApiKeys/ApiKey.php:89
 msgid "Last Used"
 msgstr "Senast använd"
 
-#: src/Entities/ApiKeys/ApiKey.php:103
+#: src/Entities/ApiKeys/ApiKey.php:107
 msgid "Not generated"
 msgstr "Inte genererad"
 
-#: src/Entities/ApiKeys/ApiKey.php:117
+#: src/Entities/ApiKeys/ApiKey.php:121
 #: src/Entities/Models/MetaBoxes/Configuration.php:59
 #: src/Entities/Models/Model.php:78
 msgid "Active"
 msgstr "Aktiv"
 
-#: src/Entities/ApiKeys/ApiKey.php:119
+#: src/Entities/ApiKeys/ApiKey.php:123
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: src/Entities/ApiKeys/ApiKey.php:147
+#: src/Entities/ApiKeys/ApiKey.php:151
 msgid "Never"
 msgstr "Aldrig"
 
@@ -606,113 +601,113 @@ msgstr "Ingen fråga eller innehåll angivet"
 msgid "Analyze the content on this page."
 msgstr "Analysera innehållet på denna sida."
 
-#: src/Shortcodes/ModularAI.php:40
+#: src/Shortcodes/ModularAIAssistant.php:40
 msgid "Show AI Response"
 msgstr "Visa AI-svar"
 
-#: resources/views/components/editor-integration.php:2
+#: resources/views/components/editor-integration.php:18
 msgid "No AI modules with editor integration enabled."
 msgstr "Inga AI-moduler med redigerarintegration aktiverad."
 
-#: resources/views/components/editor-integration.php:5
+#: resources/views/components/editor-integration.php:21
 msgid "Analyze your content with AI to get improvement suggestions."
 msgstr "Analysera ditt innehåll med AI för att få förbättringsförslag."
 
-#: resources/views/components/editor-integration.php:8
+#: resources/views/components/editor-integration.php:24
 msgid "Select AI Module:"
 msgstr "Välj AI-modul:"
 
-#: resources/views/components/editor-integration.php:23
+#: resources/views/components/editor-integration.php:39
 msgid "Analyze Content"
 msgstr "Analysera innehåll"
 
-#: resources/views/components/module.php:21
+#: resources/views/components/module.php:29
 msgid "AI Overview"
 msgstr "AI-översikt"
 
-#: resources/views/components/module.php:66
+#: resources/views/components/module.php:74
 msgid "Close modal"
 msgstr "Stäng modal"
 
-#: resources/views/fields/api-key.php:32
+#: resources/views/fields/api-key.php:36
 msgid "Copy to Clipboard"
 msgstr "Kopiera till urklipp"
 
-#: resources/views/components/module.php:82
-#: resources/views/components/module.php:86
-#: resources/views/fields/api-key.php:41
+#: resources/views/components/module.php:90
+#: resources/views/components/module.php:94
+#: resources/views/fields/api-key.php:45
 msgid "Copied!"
 msgstr "Kopierad!"
 
-#: resources/views/fields/api-key.php:41
+#: resources/views/fields/api-key.php:45
 msgid "Copy"
 msgstr "Kopiera"
 
-#: resources/views/fields/api-key.php:49
+#: resources/views/fields/api-key.php:53
 msgid "Generate new API key"
 msgstr "Generera ny API nyckel"
 
-#: resources/views/fields/api-key.php:55
+#: resources/views/fields/api-key.php:59
 msgid "Generating..."
 msgstr "Genererar…"
 
-#: resources/views/fields/api-key.php:55
+#: resources/views/fields/api-key.php:59
 msgid "Regenerate"
 msgstr "Regenerera"
 
-#: resources/views/partials/model-testing.php:9
+#: resources/views/partials/model-testing.php:14
 msgid "Click the button to test if the model can be reached with current settings."
 msgstr "Klicka på knappen för att testa om modellen kan nås med aktuella inställningar."
 
-#: resources/views/partials/model-testing.php:18
+#: resources/views/partials/model-testing.php:23
 msgid "Testing..."
 msgstr "Testar…"
 
-#: resources/views/partials/model-testing.php:18
+#: resources/views/partials/model-testing.php:23
 msgid "Test Model"
 msgstr "Testa modell"
 
-#: resources/views/partials/module-usage.php:8
+#: resources/views/partials/module-usage.php:13
 msgid "Use these shortcodes to display this module:"
 msgstr "Använd dessa kortkoder för att visa denna modul:"
 
-#: resources/views/partials/module-usage.php:11
+#: resources/views/partials/module-usage.php:16
 msgid "Basic Usage:"
 msgstr "Grundläggande användning:"
 
-#: resources/views/partials/module-usage.php:13
+#: resources/views/partials/module-usage.php:18
 msgid "Uses configured content"
 msgstr "Använder konfigurerat innehåll"
 
-#: resources/views/partials/module-usage.php:17
+#: resources/views/partials/module-usage.php:22
 msgid "Custom Query:"
 msgstr "Anpassad förfrågan:"
 
-#: resources/views/partials/module-usage.php:19
+#: resources/views/partials/module-usage.php:24
 msgid "Uses custom question instead of configured content"
 msgstr "Använder anpassad fråga istället för konfigurerat innehåll"
 
-#: resources/views/partials/module-usage.php:23
+#: resources/views/partials/module-usage.php:28
 msgid "Modal Display:"
 msgstr "Modal visning:"
 
-#: resources/views/partials/module-usage.php:25
+#: resources/views/partials/module-usage.php:30
 msgid "Shows response in modal popup (button)"
 msgstr "Visar svar i modal popup (knapp)"
 
-#: resources/views/partials/module-usage.php:29
+#: resources/views/partials/module-usage.php:34
 msgid "Modal with Custom Button:"
 msgstr "Modal med anpassad knapp:"
 
-#: resources/views/partials/module-usage.php:31
+#: resources/views/partials/module-usage.php:36
 msgid "Modal with custom button text"
 msgstr "Modal med anpassad knapptext"
 
-#: resources/views/partials/module-usage.php:35
+#: resources/views/partials/module-usage.php:40
 msgid "Debug Mode:"
 msgstr "Felsökningsläge:"
 
-#: resources/views/partials/module-usage.php:37
+#: resources/views/partials/module-usage.php:42
 msgid "Shows CURL command for debugging"
 msgstr "Visar CURL-kommando för felsökning"
 
@@ -733,7 +728,7 @@ msgstr "Fel:"
 msgid "Network error. Please try again."
 msgstr "Nätverksfel. Vänligen försök igen."
 
-#: resources/views/components/editor-integration.php:12
+#: resources/views/components/editor-integration.php:28
 msgid "Select AI Module"
 msgstr "Välj AI modul"
 
@@ -781,15 +776,15 @@ msgstr "Begäran misslyckades"
 msgid "Something went wrong. Please try again later."
 msgstr "Något gick fel. Försök igen senare."
 
-#: resources/views/components/module.php:82
+#: resources/views/components/module.php:90
 msgid "Copy analysis"
 msgstr "Kopiera analys"
 
-#: resources/views/components/module.php:86
+#: resources/views/components/module.php:94
 msgid "Copy CURL"
 msgstr "Kopiera CURL"
 
-#: src/Abstracts/PostType.php:76
+#: src/Abstracts/PostType.php:80
 msgid "Date"
 msgstr "Datum"
 
@@ -839,8 +834,8 @@ msgid "Settings"
 msgstr "Inställningar"
 
 #: src/Admin/Settings.php:20
-msgid "Modular AI Settings"
-msgstr "Modular AI Inställningar"
+msgid "Modular AI Assistant Settings"
+msgstr "Modular AI Assistant Inställningar"
 
 #: src/Admin/Settings.php:42
 msgid "General"
@@ -859,8 +854,8 @@ msgid "Enable Shortcode"
 msgstr "Aktivera kortkod"
 
 #: src/Admin/Settings.php:52
-msgid "Enable the [modular-ai] shortcode functionality."
-msgstr "Aktivera kortkodsfunktionen [modular-ai]."
+msgid "Enable the [modular-ai-assistant] shortcode functionality."
+msgstr "Aktivera kortkodsfunktionen [modular-ai-assistant]."
 
 #: src/Admin/Settings.php:60
 msgid "Appearance"
@@ -915,11 +910,16 @@ msgid "Class %s does not exist"
 msgstr "Klass %s finns inte"
 
 #. Author of the plugin
-#: modular-ai.php
+#: modular-ai-assistant.php
 msgid "Alingsås Kommun"
 msgstr "Alingsås Kommun"
 
 #. Author URI of the plugin
-#: modular-ai.php
+#: modular-ai-assistant.php
 msgid "https://alingsas.se"
 msgstr "https://alingsas.se"
+
+#. Description of the plugin
+#: modular-ai-assistant.php
+msgid "WordPress plugin that lets you integrate AI into your WordPress website"
+msgstr "WordPress-plugin som låter dig integrera AI i din WordPress-webbplats"

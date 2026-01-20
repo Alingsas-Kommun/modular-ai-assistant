@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI\Api\Endpoints;
+namespace ModularAIAssistant\Api\Endpoints;
 
-use ModularAI\Api\Abstracts\Endpoint;
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Api\Abstracts\Endpoint;
+use ModularAIAssistant\Utilities\Template;
 
 class ModuleTemplate extends Endpoint
 {
@@ -86,7 +86,7 @@ class ModuleTemplate extends Endpoint
             'instance_id' => $instance_id,
             'modal' => true,
             'hide_trigger' => true,
-            'modal_title' => __('AI Content Analysis', 'modular-ai'),
+            'modal_title' => __('AI Content Analysis', 'modular-ai-assistant'),
             'button_text' => '',
             'button_class' => '',
             'post_id' => $post_id,

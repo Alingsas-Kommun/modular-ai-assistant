@@ -2,21 +2,21 @@ const { __ } = wp.i18n;
 
 // Editor integration for admin
 document.addEventListener('DOMContentLoaded', () => {
-    const analyzeButtons = document.querySelectorAll('.modular-ai-analyze-btn');
+    const analyzeButtons = document.querySelectorAll('.modular-ai-assistant-analyze-btn');
     
     analyzeButtons.forEach(button => {
         button.addEventListener('click', async function() {
             const postId = this.getAttribute('data-post-id');
-            const select = document.getElementById(`modular-ai-module-selector-${postId}`);
+            const select = document.getElementById(`modular-ai-assistant-module-selector-${postId}`);
             const moduleId = select ? select.value : null;
             
             if (!moduleId) {
-                alert(__('Please select a module', 'modular-ai'));
+                alert(__('Please select a module', 'modular-ai-assistant'));
                 return;
             }
             
             // Get modal container
-            let modalContainer = document.getElementById(`modular-ai-editor-modal-${postId}`);
+            let modalContainer = document.getElementById(`modular-ai-assistant-editor-modal-${postId}`);
             if (!modalContainer) {
                 return;
             }
@@ -34,15 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     post_id: parseInt(postId)
                 });
                 
-                const response = await fetch(window.modular_ai.restUrl + '/template/module?' + params, {
+                const response = await fetch(window.modular_ai_assistant.restUrl + '/template/module?' + params, {
                     method: 'GET',
                     headers: {
-                        'X-WP-Nonce': window.modular_ai.restNonce
+                        'X-WP-Nonce': window.modular_ai_assistant.restNonce
                     }
                 });
                 
                 if (!response.ok) {
-                    throw new Error(__('Failed to load template', 'modular-ai'));
+                    throw new Error(__('Failed to load template', 'modular-ai-assistant'));
                 }
                 
                 const data = await response.json();
@@ -67,14 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         }, 100);
                     }
                 } else {
-                    throw new Error(__('Invalid template response', 'modular-ai'));
+                    throw new Error(__('Invalid template response', 'modular-ai-assistant'));
                 }
                 
             } catch (error) {
-                console.error(__('Error loading module template:', 'modular-ai'), error);
+                console.error(__('Error loading module template:', 'modular-ai-assistant'), error);
                 modalContainer.innerHTML = `
                     <div style="padding: 20px; color: #d63638;">
-                        ${__('Error loading template:', 'modular-ai')} ${error.message}
+                        ${__('Error loading template:', 'modular-ai-assistant')} ${error.message}
                     </div>
                 `;
             }

@@ -1,11 +1,11 @@
 <?php
 
-namespace ModularAI\Api\Endpoints;
+namespace ModularAIAssistant\Api\Endpoints;
 
-use ModularAI\Api\Abstracts\Endpoint;
-use ModularAI\Entities\Modules\Repository as ModulesRepository;
+use ModularAIAssistant\Api\Abstracts\Endpoint;
+use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class ListModules extends Endpoint
 {
@@ -55,7 +55,7 @@ class ListModules extends Endpoint
         
         return $this->error(
             'mai_unauthorized',
-            __('Valid API key required. Please provide a valid API key via X-API-Key header or api_key parameter.', 'modular-ai'),
+            __('Valid API key required. Please provide a valid API key via X-API-Key header or api_key parameter.', 'modular-ai-assistant'),
             401
         );
     }

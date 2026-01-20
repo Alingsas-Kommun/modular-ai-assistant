@@ -76,7 +76,7 @@ export class StreamHandler {
             }
         } catch (streamError) {
             if (callbacks.onError) {
-                callbacks.onError(__('Failed to read stream', 'modular-ai'));
+                callbacks.onError(__('Failed to read stream', 'modular-ai-assistant'));
             }
             throw streamError;
         }

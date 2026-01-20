@@ -1,11 +1,11 @@
 <?php
 
-namespace ModularAI\Admin;
+namespace ModularAIAssistant\Admin;
 
-use ModularAI\Utilities\Template;
-use ModularAI\Entities\Modules\Repository as ModulesRepository;
+use ModularAIAssistant\Utilities\Template;
+use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -32,7 +32,7 @@ class EditorIntegration
     {
         add_meta_box(
             'mai_editor_integration',
-            __('AI Content Analysis', 'modular-ai'),
+            __('AI Content Analysis', 'modular-ai-assistant'),
             [$this, 'renderMetaBox'],
             ['post', 'page'],
             'side',

@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI;
+namespace ModularAIAssistant;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
 
 class Application
 {
@@ -91,7 +91,7 @@ class Application
             throw new \InvalidArgumentException(
                 sprintf(
                     /* Translators: %s: Provider class name */
-                    esc_html__('Provider %s must extend ServiceProvider', 'modular-ai'),
+                    esc_html__('Provider %s must extend ServiceProvider', 'modular-ai-assistant'),
                     esc_html($provider)
                 )
             );

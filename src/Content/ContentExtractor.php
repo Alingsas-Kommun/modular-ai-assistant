@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI\Content;
+namespace ModularAIAssistant\Content;
 
-use ModularAI\Content\Utilities\HtmlProcessor;
-use ModularAI\Content\Utilities\MarkdownConverter;
+use ModularAIAssistant\Content\Utilities\HtmlProcessor;
+use ModularAIAssistant\Content\Utilities\MarkdownConverter;
 
 class ContentExtractor
 {
@@ -70,7 +70,7 @@ class ContentExtractor
         }
         
         // Apply custom HTML content filter (allows third-party plugins to inject content)
-        $content = apply_filters('modular_ai_custom_html_content', $content, $current_post->ID, get_post_type($current_post));
+        $content = apply_filters('modular_ai_assistant_custom_html_content', $content, $current_post->ID, get_post_type($current_post));
         
         // Initialize adapters manager and auto-load all adapters
         $adaptersManager = new Adapters();

@@ -4,7 +4,7 @@
     }
 }
 
-.modular-ai-editor-integration {
+.modular-ai-assistant-editor-integration {
     label {
         font-weight: 600;
     }
@@ -13,7 +13,7 @@
         box-sizing: border-box;
     }
 
-    .modular-ai-analyze-btn {
+    .modular-ai-assistant-analyze-btn {
         display: flex;
         align-items: center;
         gap: 5px;
@@ -31,7 +31,7 @@
         }
         
         &:focus {
-            outline: 2px solid var(--modular-ai-focus-outline);
+            outline: 2px solid var(--modular-ai-assistant-focus-outline);
             outline-offset: 2px;
         }
         

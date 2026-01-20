@@ -1,6 +1,6 @@
 {
-    "name": "alingsas-kommun/modular-ai",
-    "description": "WordPress plugin that let's you integrate AI into your wordpress website",
+    "name": "alingsas-kommun/modular-ai-assistant",
+    "description": "WordPress plugin that let's you integrate AI into your WordPress website",
     "type": "wordpress-plugin",
     "license": "GPL-3.0-or-later",
     "require": {
@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ModularAI\\": "src/"
+            "ModularAIAssistant\\": "src/"
         }
     }
 }

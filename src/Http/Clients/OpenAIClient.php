@@ -1,11 +1,11 @@
 <?php
 
-namespace ModularAI\Http\Clients;
+namespace ModularAIAssistant\Http\Clients;
 
-use ModularAI\Http\Client;
-use ModularAI\Http\Interfaces\AiClientInterface;
+use ModularAIAssistant\Http\Client;
+use ModularAIAssistant\Http\Interfaces\AiClientInterface;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class OpenAIClient implements AiClientInterface
 {
@@ -36,15 +36,15 @@ class OpenAIClient implements AiClientInterface
     {
         // Validate model settings
         if (empty($model['endpoint'])) {
-            return new \WP_Error('mai_no_endpoint', __('Endpoint missing', 'modular-ai'));
+            return new \WP_Error('mai_no_endpoint', __('Endpoint missing', 'modular-ai-assistant'));
         }
         
         if (empty($model['api_key'])) {
-            return new \WP_Error('mai_no_key', __('API key missing', 'modular-ai'));
+            return new \WP_Error('mai_no_key', __('API key missing', 'modular-ai-assistant'));
         }
         
         if (empty($model['model_id'])) {
-            return new \WP_Error('mai_no_model', __('Model ID missing', 'modular-ai'));
+            return new \WP_Error('mai_no_model', __('Model ID missing', 'modular-ai-assistant'));
         }
         
         // Build payload
@@ -103,22 +103,22 @@ class OpenAIClient implements AiClientInterface
     {
         // Validate inputs
         if (empty($model['endpoint'])) {
-            return new \WP_Error('mai_no_endpoint', __('Endpoint missing', 'modular-ai'));
+            return new \WP_Error('mai_no_endpoint', __('Endpoint missing', 'modular-ai-assistant'));
         }
         
         if (empty($model['api_key'])) {
-            return new \WP_Error('mai_no_key', __('API key missing', 'modular-ai'));
+            return new \WP_Error('mai_no_key', __('API key missing', 'modular-ai-assistant'));
         }
         
         if (empty($model['model_id'])) {
-            return new \WP_Error('mai_no_model', __('Model name missing', 'modular-ai'));
+            return new \WP_Error('mai_no_model', __('Model name missing', 'modular-ai-assistant'));
         }
         
         // Create test message
         $currentLocale = get_locale();
         
         /* Translators: This is a test message to verify the AI model is working correctly.*/
-        $testMessage = sprintf(__('Please respond in %s language. This is a test to verify the AI model is working correctly.', 'modular-ai'), $currentLocale);
+        $testMessage = sprintf(__('Please respond in %s language. This is a test to verify the AI model is working correctly.', 'modular-ai-assistant'), $currentLocale);
         
         $messages = [
             [
@@ -136,7 +136,7 @@ class OpenAIClient implements AiClientInterface
         
         return [
             'success' => true,
-            'message' => __('Model connection successful!', 'modular-ai'),
+            'message' => __('Model connection successful!', 'modular-ai-assistant'),
             'response_text' => $result['text'],
             'status' => $result['status'],
             'raw_response' => $result['raw'],

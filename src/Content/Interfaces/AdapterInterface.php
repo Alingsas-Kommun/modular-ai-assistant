@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Content\Interfaces;
+namespace ModularAIAssistant\Content\Interfaces;
 
 interface AdapterInterface
 {

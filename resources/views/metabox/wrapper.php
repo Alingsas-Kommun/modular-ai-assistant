@@ -23,7 +23,7 @@ if (! defined('ABSPATH')) {
     echo $nonce_field;
 ?>
 
-<div class="modular-ai-metabox-wrapper modular-ai-layout-<?php echo esc_attr($layout); ?>">
+<div class="modular-ai-assistant-metabox-wrapper modular-ai-assistant-layout-<?php echo esc_attr($layout); ?>">
     <?php foreach ($fields as $section_key => $section): ?>
         <?php if (isset($section['label'])): ?>
             <h3><?php echo esc_html($section['label']); ?></h3>
@@ -31,7 +31,7 @@ if (! defined('ABSPATH')) {
         
         <?php if (isset($section['fields'])): ?>
             <?php if ($layout === 'stacked'): ?>
-                <div class="modular-ai-fields-stacked">
+                <div class="modular-ai-assistant-fields-stacked">
                     <?php foreach ($section['fields'] as $field): ?>
                         <?php
                             $value = get_post_meta($post->ID, '_mai_' . $field['id'], true);

@@ -1,9 +1,9 @@
 {
-  "domain": "modular-ai",
+  "domain": "modular-ai-assistant",
   "locale_data": {
-    "modular-ai": {
+    "modular-ai-assistant": {
       "": {
-        "domain": "modular-ai",
+        "domain": "modular-ai-assistant",
         "lang": "sv_SE",
         "plural-forms": "nplurals=2; plural=(n != 1);"
       },

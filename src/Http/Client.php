@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Http;
+namespace ModularAIAssistant\Http;
 
-use ModularAI\Http\Interfaces\HttpClientInterface;
+use ModularAIAssistant\Http\Interfaces\HttpClientInterface;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\RequestException;
 
-use function ModularAI\config;
+use function ModularAIAssistant\config;
 
 class Client implements HttpClientInterface
 {
@@ -46,7 +46,7 @@ class Client implements HttpClientInterface
                 'json' => $data,
                 'headers' => array_merge([
                     'Content-Type' => 'application/json',
-                    'User-Agent' => 'ModularAI-WordPress-Plugin/' . config('app.version'),
+                    'User-Agent' => 'ModularAIAssistant-WordPress-Plugin/' . config('app.version'),
                 ], $headers),
                 'timeout' => $timeout,
             ]);
@@ -56,7 +56,7 @@ class Client implements HttpClientInterface
             
             if (empty($body)) {
                 /* Translators: This is an empty response from the server. */
-                return new \WP_Error('mai_empty_response', __('Empty response from server', 'modular-ai'));
+                return new \WP_Error('mai_empty_response', __('Empty response from server', 'modular-ai-assistant'));
             }
             
             $decoded = json_decode($body, true);
@@ -65,7 +65,7 @@ class Client implements HttpClientInterface
                 return new \WP_Error(
                     'mai_json_error',
                     /* Translators: This is a JSON error message. */
-                    sprintf(__('JSON error: %s', 'modular-ai'), json_last_error_msg())
+                    sprintf(__('JSON error: %s', 'modular-ai-assistant'), json_last_error_msg())
                 );
             }
             
@@ -96,14 +96,14 @@ class Client implements HttpClientInterface
             return new \WP_Error(
                 'mai_request_error',
                 /* Translators: 1: HTTP status code, 2: Error message */
-                sprintf(__('Request error (HTTP %1$d): %2$s', 'modular-ai'), $statusCode, $message)
+                sprintf(__('Request error (HTTP %1$d): %2$s', 'modular-ai-assistant'), $statusCode, $message)
             );
             
         } catch (GuzzleException $e) {
             return new \WP_Error(
                 'mai_http_error',
                 /* Translators: This is an HTTP error message. */
-                sprintf(__('HTTP error: %s', 'modular-ai'), $e->getMessage())
+                sprintf(__('HTTP error: %s', 'modular-ai-assistant'), $e->getMessage())
             );
         }
     }
@@ -138,7 +138,7 @@ class Client implements HttpClientInterface
                 'json' => $data,
                 'headers' => array_merge([
                     'Content-Type' => 'application/json',
-                    'User-Agent' => 'ModularAI-WordPress-Plugin/' . config('app.version'),
+                    'User-Agent' => 'ModularAIAssistant-WordPress-Plugin/' . config('app.version'),
                 ], $headers),
                 'timeout' => $timeout,
                 'stream' => true,
@@ -151,7 +151,7 @@ class Client implements HttpClientInterface
                 $decoded = json_decode($body, true);
 
                 /* Translators: This is a streaming error message. */
-                $errorMessage = __('Streaming error', 'modular-ai');
+                $errorMessage = __('Streaming error', 'modular-ai-assistant');
                 
                 if (json_last_error() === JSON_ERROR_NONE && isset($decoded['error'])) {
                     $errorMessage = is_string($decoded['error']) 
@@ -162,7 +162,7 @@ class Client implements HttpClientInterface
                 yield new \WP_Error(
                     'mai_streaming_error',
                     /* Translators: 1: HTTP status code, 2: Error message */
-                    sprintf(__('Streaming error (HTTP %1$d): %2$s', 'modular-ai'), $statusCode, $errorMessage)
+                    sprintf(__('Streaming error (HTTP %1$d): %2$s', 'modular-ai-assistant'), $statusCode, $errorMessage)
                 );
                 return;
             }
@@ -232,14 +232,14 @@ class Client implements HttpClientInterface
             yield new \WP_Error(
                 'mai_request_error',
                 /* Translators: 1: HTTP status code, 2: Error message */
-                sprintf(__('Request error (HTTP %1$d): %2$s', 'modular-ai'), $statusCode, $message)
+                sprintf(__('Request error (HTTP %1$d): %2$s', 'modular-ai-assistant'), $statusCode, $message)
             );
             
         } catch (GuzzleException $e) {
             yield new \WP_Error(
                 'mai_streaming_error',
                 /* Translators: This is a streaming error message. */
-                sprintf(__('Streaming error: %s', 'modular-ai'), $e->getMessage())
+                sprintf(__('Streaming error: %s', 'modular-ai-assistant'), $e->getMessage())
             );
         }
     }

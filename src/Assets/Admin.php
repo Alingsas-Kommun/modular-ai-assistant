@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI\Assets;
+namespace ModularAIAssistant\Assets;
 
-use ModularAI\Utilities\ViteManifest;
-use function ModularAI\{config, di};
+use ModularAIAssistant\Utilities\ViteManifest;
+use function ModularAIAssistant\{config, di};
 
 if (! defined('ABSPATH')) {
     exit;
@@ -38,7 +38,7 @@ class Admin
     
         if ($adminJs) {
             wp_enqueue_script(
-                'modular-ai-admin',
+                'modular-ai-assistant-admin',
                 config('paths.plugin_url') . 'dist/' . $adminJs,
                 ['jquery', 'wp-util', 'wp-i18n'],
                 config('app.version'),
@@ -50,23 +50,23 @@ class Admin
             
             // Add type="module" attribute for ES module support
             add_filter('script_loader_tag', function($tag, $handle) {
-                if ($handle === 'modular-ai-admin') {
+                if ($handle === 'modular-ai-assistant-admin') {
                     return str_replace(' src', ' type="module" src', $tag);
                 }
                 return $tag;
             }, 10, 2);
             
-            wp_localize_script('modular-ai-admin', 'modular_ai', [
+            wp_localize_script('modular-ai-assistant-admin', 'modular_ai_assistant', [
                 'restNonce' => wp_create_nonce('wp_rest'),
-                'restUrl' => esc_url_raw(rest_url()) . 'modular-ai/v1',
+                'restUrl' => esc_url_raw(rest_url()) . 'modular-ai-assistant/v1',
             ]);
 
-            wp_set_script_translations('modular-ai-admin', 'modular-ai', config('paths.plugin_path') . 'resources/languages/');
+            wp_set_script_translations('modular-ai-assistant-admin', 'modular-ai-assistant', config('paths.plugin_path') . 'resources/languages/');
         }
     
         foreach ($adminCss as $index => $cssFile) {
             wp_enqueue_style(
-                'modular-ai-' . $index,
+                'modular-ai-assistant-' . $index,
                 config('paths.plugin_url') . 'dist/' . $cssFile,
                 [],
                 config('app.version'),
@@ -156,7 +156,7 @@ class Admin
     public function enqueueColorPicker($hook)
     {
         // Only load on our settings page
-        if ($hook !== 'modular-ai_page_modular-ai-settings') {
+        if ($hook !== 'modular-ai-assistant_page_modular-ai-assistant-settings') {
             return;
         }
 
@@ -167,7 +167,7 @@ class Admin
         // Initialize color picker
         wp_add_inline_script('wp-color-picker', '
             jQuery(document).ready(function($) {
-                $(".modular-ai-color-picker").wpColorPicker();
+                $(".modular-ai-assistant-color-picker").wpColorPicker();
             });
         ');
     }

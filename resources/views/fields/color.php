@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
     name="<?php echo esc_attr($field_name); ?>" 
     id="<?php echo esc_attr($field_id); ?>" 
     value="<?php echo esc_attr($value); ?>" 
-    class="modular-ai-color-picker" 
+    class="modular-ai-assistant-color-picker" 
     data-default-color="<?php echo esc_attr($field['default'] ?? ''); ?>"
     <?php echo esc_attr($required); ?>
 >

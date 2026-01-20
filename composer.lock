@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a3d2a4c1642b97492719f6b1ddba856",
+    "content-hash": "6240a3d622d9b4735c49a9b41b8d9ccb",
     "packages": [
         {
             "name": "fastvolt/markdown",
@@ -758,5 +758,5 @@
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

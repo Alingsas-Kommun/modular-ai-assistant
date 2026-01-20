@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Entities\ApiKeys;
+namespace ModularAIAssistant\Entities\ApiKeys;
 
-use ModularAI\Entities\ApiKeys\MetaBoxes\Configuration;
+use ModularAIAssistant\Entities\ApiKeys\MetaBoxes\Configuration;
 
 class Repository
 {

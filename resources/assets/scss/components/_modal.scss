@@ -1,11 +1,11 @@
 // Modal Overlay
-.modular-ai-modal {
+.modular-ai-assistant-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--modular-ai-modal-overlay);
+    background: var(--modular-ai-assistant-modal-overlay);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +25,8 @@
 }
 
 // Modal Content Container
-.modular-ai-modal-content {
-    background: var(--modular-ai-modal-bg);
+.modular-ai-assistant-modal-content {
+    background: var(--modular-ai-assistant-modal-bg);
     padding: 0;
     border-radius: 16px;
     max-width: 700px;
@@ -35,7 +35,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    border: 1px solid var(--modular-ai-modal-border);
+    border: 1px solid var(--modular-ai-assistant-modal-border);
     animation: modal-slide-up 0.3s ease-out;
     display: flex;
     flex-direction: column;
@@ -45,30 +45,30 @@
         corner-shape: squircle;
     }
     
-    .modular-ai-ai-header {
+    .modular-ai-assistant-ai-header {
         padding: 24px;
         margin-bottom: 0;
-        background: var(--modular-ai-bg-light);
+        background: var(--modular-ai-assistant-bg-light);
     }
 
-    .modular-ai-modal-body {
+    .modular-ai-assistant-modal-body {
         overflow-y: auto;
         flex: 1;
     }
     
-    .modular-ai-loading,
-    .modular-ai-error,
-    .modular-ai-response {
+    .modular-ai-assistant-loading,
+    .modular-ai-assistant-error,
+    .modular-ai-assistant-response {
         padding: 24px;
-        background: var(--modular-ai-bg-subtle);
+        background: var(--modular-ai-assistant-bg-subtle);
         box-sizing: border-box;
     }
 
-    .modular-ai-error {
+    .modular-ai-assistant-error {
         margin: 24px;
     }
 
-    .modular-ai-response {
+    .modular-ai-assistant-response {
         p:first-child {
             margin-top: 0;
         }
@@ -87,17 +87,17 @@
 }
 
 // Modal Close Button
-.modular-ai-modal-close {
+.modular-ai-assistant-modal-close {
     position: absolute;
     top: 17px;
     right: 20px;
-    background: var(--modular-ai-close-bg);
-    border: 1px solid var(--modular-ai-close-border);
+    background: var(--modular-ai-assistant-close-bg);
+    border: 1px solid var(--modular-ai-assistant-close-border);
     width: 36px;
     height: 36px;
     border-radius: 8px;
     cursor: pointer;
-    color: var(--modular-ai-text-light);
+    color: var(--modular-ai-assistant-text-light);
     transition: all 0.2s ease;
     display: flex;
     align-items: center;
@@ -115,36 +115,36 @@
     }
     
     &:hover {
-        background: var(--modular-ai-close-hover-bg);
-        color: var(--modular-ai-text-dark);
-        border-color: var(--modular-ai-border-hover);
+        background: var(--modular-ai-assistant-close-hover-bg);
+        color: var(--modular-ai-assistant-text-dark);
+        border-color: var(--modular-ai-assistant-border-hover);
         transform: rotate(90deg);
     }
     
     &:focus {
-        outline: 2px solid var(--modular-ai-primary-color);
+        outline: 2px solid var(--modular-ai-assistant-primary-color);
         outline-offset: 2px;
     }
 }
 
 // Modal Footer (for editor integration)
-.modular-ai-modal-footer {
+.modular-ai-assistant-modal-footer {
     display: flex;
     gap: 12px;
     padding: 20px 24px;
-    background: var(--modular-ai-bg-light);
-    border-top: 1px solid var(--modular-ai-border);
+    background: var(--modular-ai-assistant-bg-light);
+    border-top: 1px solid var(--modular-ai-assistant-border);
 }
 
 // Modal Action Buttons
-.modular-ai-action-btn {
+.modular-ai-assistant-action-btn {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     padding: 10px 18px;
-    background: var(--modular-ai-bg-subtle);
-    color: var(--modular-ai-text);
-    border: 1px solid var(--modular-ai-border);
+    background: var(--modular-ai-assistant-bg-subtle);
+    color: var(--modular-ai-assistant-text);
+    border: 1px solid var(--modular-ai-assistant-border);
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
@@ -163,9 +163,9 @@
     }
     
     &:hover:not(:disabled) {
-        background: var(--modular-ai-primary-color);
+        background: var(--modular-ai-assistant-primary-color);
         color: #fff;
-        border-color: var(--modular-ai-primary-color);
+        border-color: var(--modular-ai-assistant-primary-color);
         transform: translateY(-1px);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -193,8 +193,8 @@
 }
 
 // Modal-specific CURL container spacing
-.modular-ai-modal-content {
-    .modular-ai-curl-container {
+.modular-ai-assistant-modal-content {
+    .modular-ai-assistant-curl-container {
         margin: 0 24px 24px 24px;
         
         &:last-child {
@@ -204,12 +204,12 @@
 }
 
 // Modal trigger button
-.modular-ai-modal-btn {
+.modular-ai-assistant-modal-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 14px 28px;
-    background: linear-gradient(135deg, var(--modular-ai-primary-color) 0%, var(--modular-ai-secondary-color) 100%);
+    background: linear-gradient(135deg, var(--modular-ai-assistant-primary-color) 0%, var(--modular-ai-assistant-secondary-color) 100%);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -219,8 +219,8 @@
     line-height: 1;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 6px -1px var(--modular-ai-shadow-primary), 
-                0 2px 4px -1px var(--modular-ai-shadow-secondary),
+    box-shadow: 0 4px 6px -1px var(--modular-ai-assistant-shadow-primary), 
+                0 2px 4px -1px var(--modular-ai-assistant-shadow-secondary),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
@@ -244,8 +244,8 @@
     
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 16px -4px var(--modular-ai-shadow-primary-hover), 
-                    0 4px 8px -2px var(--modular-ai-shadow-secondary-hover),
+        box-shadow: 0 8px 16px -4px var(--modular-ai-assistant-shadow-primary-hover), 
+                    0 4px 8px -2px var(--modular-ai-assistant-shadow-secondary-hover),
                     inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
         
         &::before {
@@ -255,12 +255,12 @@
     
     &:active {
         transform: translateY(0);
-        box-shadow: 0 2px 4px -1px var(--modular-ai-shadow-primary), 
-                    0 1px 2px -1px var(--modular-ai-shadow-secondary);
+        box-shadow: 0 2px 4px -1px var(--modular-ai-assistant-shadow-primary), 
+                    0 1px 2px -1px var(--modular-ai-assistant-shadow-secondary);
     }
     
     &:focus {
-        outline: 3px solid var(--modular-ai-focus-outline);
+        outline: 3px solid var(--modular-ai-assistant-focus-outline);
         outline-offset: 3px;
     }
     

@@ -1,14 +1,14 @@
 <?php
 
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
-use ModularAI\Api\Endpoints\RunModule;
-use ModularAI\Api\Endpoints\ModuleTemplate;
-use ModularAI\Api\Endpoints\TestModel;
-use ModularAI\Api\Endpoints\ListModels;
-use ModularAI\Api\Endpoints\ListModules;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
+use ModularAIAssistant\Api\Endpoints\RunModule;
+use ModularAIAssistant\Api\Endpoints\ModuleTemplate;
+use ModularAIAssistant\Api\Endpoints\TestModel;
+use ModularAIAssistant\Api\Endpoints\ListModels;
+use ModularAIAssistant\Api\Endpoints\ListModules;
 
 class ApiServiceProvider extends ServiceProvider
 {

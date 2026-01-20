@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- * Build script for Modular AI WordPress Plugin
+ * Build script for Modular AI Assistant WordPress Plugin
  * 
  * Builds assets and optionally cleans up development files.
  * 

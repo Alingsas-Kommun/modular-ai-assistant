@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Utilities;
+namespace ModularAIAssistant\Utilities;
 
 class Container
 {
@@ -85,7 +85,7 @@ class Container
             throw new \RuntimeException(
                 sprintf(
                     /* Translators: %s: Class name */
-                    esc_html__('Class %s does not exist', 'modular-ai'),
+                    esc_html__('Class %s does not exist', 'modular-ai-assistant'),
                     esc_html($concrete)
                 )
             );

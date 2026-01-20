@@ -1,9 +1,9 @@
 <?php
 
-namespace ModularAI\Entities\Models\MetaBoxes;
+namespace ModularAIAssistant\Entities\Models\MetaBoxes;
 
-use ModularAI\Abstracts\MetaBox;
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Abstracts\MetaBox;
+use ModularAIAssistant\Utilities\Template;
 
 class Testing extends MetaBox
 {
@@ -19,7 +19,7 @@ class Testing extends MetaBox
      */
     protected function getTitle()
     {
-        return __('Test Connection', 'modular-ai');
+        return __('Test Connection', 'modular-ai-assistant');
     }
 
     /**

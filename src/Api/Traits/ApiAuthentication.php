@@ -1,10 +1,10 @@
 <?php
 
-namespace ModularAI\Api\Traits;
+namespace ModularAIAssistant\Api\Traits;
 
-use ModularAI\Entities\ApiKeys\Repository as ApiKeysRepository;
+use ModularAIAssistant\Entities\ApiKeys\Repository as ApiKeysRepository;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 trait ApiAuthentication
 {

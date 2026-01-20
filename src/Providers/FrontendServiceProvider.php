@@ -1,10 +1,10 @@
 <?php
 
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
-use ModularAI\Assets\Frontend as FrontendAssets;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
+use ModularAIAssistant\Assets\Frontend as FrontendAssets;
 
 class FrontendServiceProvider extends ServiceProvider
 {

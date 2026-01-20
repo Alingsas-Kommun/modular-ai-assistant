@@ -1,18 +1,18 @@
 <?php
 
-namespace ModularAI\Providers;
+namespace ModularAIAssistant\Providers;
 
-use ModularAI\Abstracts\ServiceProvider;
-use ModularAI\Utilities\Container;
-use ModularAI\Utilities\ViteManifest;
-use ModularAI\Shortcodes\ModularAI as ModularAIShortcode;
-use ModularAI\Entities\Models\Repository as ModelsRepository;
-use ModularAI\Entities\Modules\Repository as ModulesRepository;
-use ModularAI\Entities\ApiKeys\Repository as ApiKeysRepository;
-use ModularAI\Http\Client;
-use ModularAI\Http\Clients\OpenAIClient;
-use ModularAI\Services\ModuleRunner;
-use ModularAI\Services\ModuleCacheService;
+use ModularAIAssistant\Abstracts\ServiceProvider;
+use ModularAIAssistant\Utilities\Container;
+use ModularAIAssistant\Utilities\ViteManifest;
+use ModularAIAssistant\Shortcodes\ModularAIAssistant as ModularAIAssistantShortcode;
+use ModularAIAssistant\Entities\Models\Repository as ModelsRepository;
+use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
+use ModularAIAssistant\Entities\ApiKeys\Repository as ApiKeysRepository;
+use ModularAIAssistant\Http\Client;
+use ModularAIAssistant\Http\Clients\OpenAIClient;
+use ModularAIAssistant\Services\ModuleRunner;
+use ModularAIAssistant\Services\ModuleCacheService;
 
 class PluginServiceProvider extends ServiceProvider
 {
@@ -25,7 +25,7 @@ class PluginServiceProvider extends ServiceProvider
     public function register(Container $container): void
     {
         $container->singleton(ViteManifest::class);
-        $container->singleton(ModularAIShortcode::class);
+        $container->singleton(ModularAIAssistantShortcode::class);
         $container->singleton(ModelsRepository::class);
         $container->singleton(ModulesRepository::class);
         $container->singleton(ApiKeysRepository::class);
@@ -44,7 +44,7 @@ class PluginServiceProvider extends ServiceProvider
     public function boot(Container $container): void
     {
         $container->make(ViteManifest::class);
-        $container->make(ModularAIShortcode::class);
+        $container->make(ModularAIAssistantShortcode::class);
         $container->make(ModelsRepository::class);
         $container->make(ModulesRepository::class);
         $container->make(ApiKeysRepository::class);

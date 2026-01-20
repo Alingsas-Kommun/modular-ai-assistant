@@ -1,8 +1,8 @@
 <?php
 
-namespace ModularAI\Utilities;
+namespace ModularAIAssistant\Utilities;
 
-use function ModularAI\config;
+use function ModularAIAssistant\config;
 
 class ViteManifest
 {

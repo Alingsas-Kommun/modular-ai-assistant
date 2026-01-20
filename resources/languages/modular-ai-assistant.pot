@@ -1,170 +1,170 @@
-# Copyright (C) 2025 Alingsås Kommun
+# Copyright (C) 2026 Alingsås Kommun
 # This file is distributed under the GPL v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Modular AI 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modular-ai\n"
+"Project-Id-Version: Modular AI Assistant 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modular-ai-assistant\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-11-03T12:05:28+00:00\n"
+"POT-Creation-Date: 2026-01-16T11:27:33+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: modular-ai\n"
+"X-Domain: modular-ai-assistant\n"
 
 #. Plugin Name of the plugin
-#: modular-ai.php
-#: src/Admin/Menu.php:25
-#: src/Admin/Menu.php:26
-msgid "Modular AI"
+#: modular-ai-assistant.php
+#: src/Admin/Menu.php:29
+#: src/Admin/Menu.php:30
+msgid "Modular AI Assistant"
 msgstr ""
 
 #. Description of the plugin
-#: modular-ai.php
-msgid "WordPress plugin that let's you integrate AI into your wordpress website"
+#: modular-ai-assistant.php
+msgid "WordPress plugin that lets you integrate AI into your WordPress website"
 msgstr ""
 
 #. Author of the plugin
-#: modular-ai.php
+#: modular-ai-assistant.php
 msgid "Alingsås Kommun"
 msgstr ""
 
 #. Author URI of the plugin
-#: modular-ai.php
+#: modular-ai-assistant.php
 msgid "https://alingsas.se"
 msgstr ""
 
-#: resources/views/components/editor-integration.php:2
+#: resources/views/components/editor-integration.php:18
 msgid "No AI modules with editor integration enabled."
 msgstr ""
 
-#: resources/views/components/editor-integration.php:5
+#: resources/views/components/editor-integration.php:21
 msgid "Analyze your content with AI to get improvement suggestions."
 msgstr ""
 
-#: resources/views/components/editor-integration.php:8
+#: resources/views/components/editor-integration.php:24
 msgid "Select AI Module:"
 msgstr ""
 
-#: resources/views/components/editor-integration.php:12
+#: resources/views/components/editor-integration.php:28
 msgid "Select AI Module"
 msgstr ""
 
-#: resources/views/components/editor-integration.php:23
+#: resources/views/components/editor-integration.php:39
 msgid "Analyze Content"
 msgstr ""
 
-#: resources/views/components/module.php:21
+#: resources/views/components/module.php:29
 msgid "AI Overview"
 msgstr ""
 
-#: resources/views/components/module.php:66
+#: resources/views/components/module.php:74
 msgid "Close modal"
 msgstr ""
 
-#: resources/views/components/module.php:82
-#: resources/views/components/module.php:86
-#: resources/views/fields/api-key.php:41
+#: resources/views/components/module.php:90
+#: resources/views/components/module.php:94
+#: resources/views/fields/api-key.php:45
 msgid "Copied!"
 msgstr ""
 
-#: resources/views/components/module.php:82
+#: resources/views/components/module.php:90
 msgid "Copy analysis"
 msgstr ""
 
-#: resources/views/components/module.php:86
+#: resources/views/components/module.php:94
 msgid "Copy CURL"
 msgstr ""
 
-#: resources/views/fields/api-key.php:32
+#: resources/views/fields/api-key.php:36
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: resources/views/fields/api-key.php:41
+#: resources/views/fields/api-key.php:45
 msgid "Copy"
 msgstr ""
 
-#: resources/views/fields/api-key.php:49
+#: resources/views/fields/api-key.php:53
 msgid "Generate new API key"
 msgstr ""
 
-#: resources/views/fields/api-key.php:55
+#: resources/views/fields/api-key.php:59
 msgid "Generating..."
 msgstr ""
 
-#: resources/views/fields/api-key.php:55
+#: resources/views/fields/api-key.php:59
 msgid "Regenerate"
 msgstr ""
 
-#: resources/views/partials/model-testing.php:9
+#: resources/views/partials/model-testing.php:14
 msgid "Click the button to test if the model can be reached with current settings."
 msgstr ""
 
-#: resources/views/partials/model-testing.php:18
+#: resources/views/partials/model-testing.php:23
 msgid "Testing..."
 msgstr ""
 
-#: resources/views/partials/model-testing.php:18
+#: resources/views/partials/model-testing.php:23
 msgid "Test Model"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:8
+#: resources/views/partials/module-usage.php:13
 msgid "Use these shortcodes to display this module:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:11
+#: resources/views/partials/module-usage.php:16
 msgid "Basic Usage:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:13
+#: resources/views/partials/module-usage.php:18
 msgid "Uses configured content"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:17
+#: resources/views/partials/module-usage.php:22
 msgid "Custom Query:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:19
+#: resources/views/partials/module-usage.php:24
 msgid "Uses custom question instead of configured content"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:23
+#: resources/views/partials/module-usage.php:28
 msgid "Modal Display:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:25
+#: resources/views/partials/module-usage.php:30
 msgid "Shows response in modal popup (button)"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:29
+#: resources/views/partials/module-usage.php:34
 msgid "Modal with Custom Button:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:31
+#: resources/views/partials/module-usage.php:36
 msgid "Modal with custom button text"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:35
+#: resources/views/partials/module-usage.php:40
 msgid "Debug Mode:"
 msgstr ""
 
-#: resources/views/partials/module-usage.php:37
+#: resources/views/partials/module-usage.php:42
 msgid "Shows CURL command for debugging"
 msgstr ""
 
-#: src/Abstracts/PostType.php:76
+#: src/Abstracts/PostType.php:80
 msgid "Date"
 msgstr ""
 
-#: src/Admin/EditorIntegration.php:31
+#: src/Admin/EditorIntegration.php:35
 #: src/Api/Endpoints/ModuleTemplate.php:89
 msgid "AI Content Analysis"
 msgstr ""
 
 #: src/Admin/Settings.php:20
-msgid "Modular AI Settings"
+msgid "Modular AI Assistant Settings"
 msgstr ""
 
 #: src/Admin/Settings.php:30
@@ -188,7 +188,7 @@ msgid "Enable Shortcode"
 msgstr ""
 
 #: src/Admin/Settings.php:52
-msgid "Enable the [modular-ai] shortcode functionality."
+msgid "Enable the [modular-ai-assistant] shortcode functionality."
 msgstr ""
 
 #: src/Admin/Settings.php:60
@@ -220,7 +220,7 @@ msgid "The secondary color (default: blue #3b82f6)."
 msgstr ""
 
 #. Translators: 1: Parameter name
-#: src/Api/Abstracts/Endpoint.php:131
+#: src/Api/Abstracts/Endpoint.php:135
 #, php-format
 msgid "Missing required parameter: %s"
 msgstr ""
@@ -268,102 +268,102 @@ msgstr ""
 msgid "Provider %s must extend ServiceProvider"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:34
+#: src/Entities/ApiKeys/ApiKey.php:38
 msgctxt "Post type general name"
 msgid "API Keys"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:35
+#: src/Entities/ApiKeys/ApiKey.php:39
 msgctxt "Post type singular name"
 msgid "API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:36
+#: src/Entities/ApiKeys/ApiKey.php:40
 msgctxt "Admin Menu text"
 msgid "API Keys"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:37
+#: src/Entities/ApiKeys/ApiKey.php:41
 msgctxt "Add New on Toolbar"
 msgid "API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:38
+#: src/Entities/ApiKeys/ApiKey.php:42
 #: src/Entities/Models/Model.php:24
 #: src/Entities/Modules/Module.php:24
 msgid "Add New"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:39
+#: src/Entities/ApiKeys/ApiKey.php:43
 msgid "Add New API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:40
+#: src/Entities/ApiKeys/ApiKey.php:44
 msgid "New API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:41
+#: src/Entities/ApiKeys/ApiKey.php:45
 msgid "Edit API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:42
+#: src/Entities/ApiKeys/ApiKey.php:46
 msgid "View API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:43
+#: src/Entities/ApiKeys/ApiKey.php:47
 msgid "API Keys"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:44
+#: src/Entities/ApiKeys/ApiKey.php:48
 msgid "Search API Keys"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:45
+#: src/Entities/ApiKeys/ApiKey.php:49
 msgid "No API keys found."
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:46
+#: src/Entities/ApiKeys/ApiKey.php:50
 msgid "No API keys found in Trash."
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:57
+#: src/Entities/ApiKeys/ApiKey.php:61
 msgid "API keys for external access"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:70
+#: src/Entities/ApiKeys/ApiKey.php:74
 #: src/Entities/ApiKeys/MetaBoxes/Configuration.php:37
 #: src/Entities/Models/MetaBoxes/Configuration.php:51
 msgid "API Key"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:75
+#: src/Entities/ApiKeys/ApiKey.php:79
 #: src/Entities/ApiKeys/MetaBoxes/Configuration.php:49
 msgid "Status"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:80
+#: src/Entities/ApiKeys/ApiKey.php:84
 msgid "Created"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:85
+#: src/Entities/ApiKeys/ApiKey.php:89
 msgid "Last Used"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:103
+#: src/Entities/ApiKeys/ApiKey.php:107
 msgid "Not generated"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:117
+#: src/Entities/ApiKeys/ApiKey.php:121
 #: src/Entities/Models/MetaBoxes/Configuration.php:59
 #: src/Entities/Models/Model.php:78
 msgid "Active"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:119
+#: src/Entities/ApiKeys/ApiKey.php:123
 msgid "Inactive"
 msgstr ""
 
-#: src/Entities/ApiKeys/ApiKey.php:147
+#: src/Entities/ApiKeys/ApiKey.php:151
 msgid "Never"
 msgstr ""
 
@@ -851,7 +851,7 @@ msgstr ""
 msgid "Analyze the content on this page."
 msgstr ""
 
-#: src/Shortcodes/ModularAI.php:40
+#: src/Shortcodes/ModularAIAssistant.php:40
 msgid "Show AI Response"
 msgstr ""
 

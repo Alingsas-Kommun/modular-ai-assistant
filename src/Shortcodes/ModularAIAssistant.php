@@ -1,19 +1,19 @@
 <?php
 
-namespace ModularAI\Shortcodes;
+namespace ModularAIAssistant\Shortcodes;
 
-use ModularAI\Utilities\Template;
+use ModularAIAssistant\Utilities\Template;
 
-use function ModularAI\getSetting;
+use function ModularAIAssistant\getSetting;
 
-class ModularAI
+class ModularAIAssistant
 {
     /**
      * Constructor
      */
     public function __construct()
     {
-        add_shortcode('modular-ai', [$this, 'render']);
+        add_shortcode('modular-ai-assistant', [$this, 'render']);
     }
 
     /**
@@ -37,8 +37,8 @@ class ModularAI
         $query = isset($atts['q']) ? sanitize_text_field($atts['q']) : '';
         $show_curl = isset($atts['show_curl']) && $atts['show_curl'];
         $modal = isset($atts['modal']) && $atts['modal'];
-        $button_text = isset($atts['button_text']) ? sanitize_text_field($atts['button_text']) : __('Show AI Response', 'modular-ai');
-        $button_class = isset($atts['button_class']) ? sanitize_text_field($atts['button_class']) : 'modular-ai-modal-btn';
+        $button_text = isset($atts['button_text']) ? sanitize_text_field($atts['button_text']) : __('Show AI Response', 'modular-ai-assistant');
+        $button_class = isset($atts['button_class']) ? sanitize_text_field($atts['button_class']) : 'modular-ai-assistant-modal-btn';
         
         // Streaming override parameter
         $streaming = null;
@@ -50,7 +50,7 @@ class ModularAI
             return '';
         }
         
-        $instance_id = 'modular-ai-' . uniqid();
+        $instance_id = 'modular-ai-assistant-' . uniqid();
         
         return Template::get('components/module', [
             'module_id' => $id,

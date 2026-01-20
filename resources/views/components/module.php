@@ -26,7 +26,7 @@ if (! defined('ABSPATH')) {
 }
 
 $hide_trigger = $hide_trigger ?? false;
-$modal_title = $modal_title ?? __('AI Overview', 'modular-ai');
+$modal_title = $modal_title ?? __('AI Overview', 'modular-ai-assistant');
 $post_id = $post_id ?? null;
 $context = $context ?? 'frontend';
 $streaming = $streaming ?? null;
@@ -45,33 +45,33 @@ $streaming = $streaming ?? null;
         
         <div 
             x-show="showModal" 
-            class="modular-ai-modal" 
+            class="modular-ai-assistant-modal" 
             @click.self="showModal = false"
             @keydown.escape.window="showModal = false"
             role="dialog"
             aria-modal="true"
-            aria-labelledby="modular-ai-modal-title-<?php echo esc_attr($instance_id); ?>"
+            aria-labelledby="modular-ai-assistant-modal-title-<?php echo esc_attr($instance_id); ?>"
             x-cloak
         >
-            <div class="modular-ai-modal-content">
-                <div class="modular-ai-ai-header">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="modular-ai-ai-icon">
+            <div class="modular-ai-assistant-modal-content">
+                <div class="modular-ai-assistant-ai-header">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="modular-ai-assistant-ai-icon">
                         <path 
                             d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" 
-                            stroke="var(--modular-ai-primary-color)" 
+                            stroke="var(--modular-ai-assistant-primary-color)" 
                             stroke-width="2" 
                             stroke-linecap="round" 
                             stroke-linejoin="round"
                         />
                     </svg>
 
-                    <h3 id="modular-ai-modal-title-<?php echo esc_attr($instance_id); ?>"><?php echo esc_html($modal_title); ?></h3>
+                    <h3 id="modular-ai-assistant-modal-title-<?php echo esc_attr($instance_id); ?>"><?php echo esc_html($modal_title); ?></h3>
                 </div>
                 
                 <button 
                     @click="showModal = false" 
-                    class="modular-ai-modal-close"
-                    aria-label="<?php esc_attr_e('Close modal', 'modular-ai'); ?>"
+                    class="modular-ai-assistant-modal-close"
+                    aria-label="<?php esc_attr_e('Close modal', 'modular-ai-assistant'); ?>"
                     type="button"
                 >
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,31 +79,31 @@ $streaming = $streaming ?? null;
                     </svg>
                 </button>
 
-                <div class="modular-ai-modal-body">
+                <div class="modular-ai-assistant-modal-body">
                     <?php include __DIR__ . '/module-content.php'; ?>
                 </div>
             
                 <?php if ($context === 'editor'): ?>
-                    <div class="modular-ai-modal-footer">
-                        <button @click="copyAnalysis" class="modular-ai-action-btn" :disabled="!response">
+                    <div class="modular-ai-assistant-modal-footer">
+                        <button @click="copyAnalysis" class="modular-ai-assistant-action-btn" :disabled="!response">
                             <span class="dashicons" :class="copiedState === 'analysis' ? 'dashicons-yes' : 'dashicons-clipboard'"></span>
-                            <span x-text="copiedState === 'analysis' ? '<?php esc_attr_e('Copied!', 'modular-ai'); ?>' : '<?php esc_attr_e('Copy analysis', 'modular-ai'); ?>'"></span>
+                            <span x-text="copiedState === 'analysis' ? '<?php esc_attr_e('Copied!', 'modular-ai-assistant'); ?>' : '<?php esc_attr_e('Copy analysis', 'modular-ai-assistant'); ?>'"></span>
                         </button>
-                        <button @click="copyCurl" class="modular-ai-action-btn" :disabled="!curlPreview" x-show="curlPreview" x-cloak>
+                        <button @click="copyCurl" class="modular-ai-assistant-action-btn" :disabled="!curlPreview" x-show="curlPreview" x-cloak>
                             <span class="dashicons" :class="copiedState === 'curl' ? 'dashicons-yes' : 'dashicons-clipboard'"></span>
-                            <span x-text="copiedState === 'curl' ? '<?php esc_attr_e('Copied!', 'modular-ai'); ?>' : '<?php esc_attr_e('Copy CURL', 'modular-ai'); ?>'"></span>
+                            <span x-text="copiedState === 'curl' ? '<?php esc_attr_e('Copied!', 'modular-ai-assistant'); ?>' : '<?php esc_attr_e('Copy CURL', 'modular-ai-assistant'); ?>'"></span>
                         </button>
                     </div>
                 <?php endif; ?>
             </div>
         </div>
     <?php else: ?>
-        <div class="modular-ai-module">
-            <div class="modular-ai-ai-header">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="modular-ai-ai-icon">
+        <div class="modular-ai-assistant-module">
+            <div class="modular-ai-assistant-ai-header">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="modular-ai-assistant-ai-icon">
                     <path 
                         d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" 
-                        stroke="var(--modular-ai-primary-color)" 
+                        stroke="var(--modular-ai-assistant-primary-color)" 
                         stroke-width="2" 
                         stroke-linecap="round" 
                         stroke-linejoin="round"

@@ -1,30 +1,30 @@
 // Frontend CSS custom properties (AI purple/blue theme)
 // Primary and secondary colors can be customized via settings
 :root {
-    --modular-ai-primary-color: #9333ea;
-    --modular-ai-secondary-color: #3b82f6;
-    --modular-ai-bg-light: color-mix(in srgb, var(--modular-ai-primary-color) 4%, transparent);
-    --modular-ai-bg-subtle: color-mix(in srgb, var(--modular-ai-primary-color) 2%, transparent);
-    --modular-ai-border: color-mix(in srgb, var(--modular-ai-primary-color) 10%, transparent);
-    --modular-ai-border-hover: color-mix(in srgb, var(--modular-ai-primary-color) 40%, transparent);
-    --modular-ai-skeleton-bg: linear-gradient(90deg, color-mix(in srgb, var(--modular-ai-primary-color) 8%, transparent) 25%, color-mix(in srgb, var(--modular-ai-secondary-color) 8%, transparent) 50%, color-mix(in srgb, var(--modular-ai-primary-color) 8%, transparent) 75%);
-    --modular-ai-code-bg: color-mix(in srgb, var(--modular-ai-primary-color) 8%, transparent);
-    --modular-ai-code-bg-alt: color-mix(in srgb, var(--modular-ai-primary-color) 5%, transparent);
-    --modular-ai-text: #374151;
-    --modular-ai-text-dark: #1f2937;
-    --modular-ai-text-light: #6b7280;
-    --modular-ai-error: #d63638;
-    --modular-ai-error-bg: #fcf0f1;
-    --modular-ai-modal-overlay: color-mix(in srgb, #121010 60%, transparent);
-    --modular-ai-modal-bg: #ffffff;
-    --modular-ai-modal-border: color-mix(in srgb, var(--modular-ai-primary-color) 15%, transparent);
-    --modular-ai-close-bg: #ffffff;
-    --modular-ai-close-border: color-mix(in srgb, var(--modular-ai-primary-color) 20%, transparent);
-    --modular-ai-close-hover-bg: #f9fafb;
-    --modular-ai-shadow-primary: color-mix(in srgb, var(--modular-ai-primary-color) 30%, transparent);
-    --modular-ai-shadow-secondary: color-mix(in srgb, var(--modular-ai-secondary-color) 20%, transparent);
-    --modular-ai-shadow-primary-hover: color-mix(in srgb, var(--modular-ai-primary-color) 40%, transparent);
-    --modular-ai-shadow-secondary-hover: color-mix(in srgb, var(--modular-ai-secondary-color) 30%, transparent);
-    --modular-ai-focus-outline: color-mix(in srgb, var(--modular-ai-primary-color) 40%, transparent);
+    --modular-ai-assistant-primary-color: #9333ea;
+    --modular-ai-assistant-secondary-color: #3b82f6;
+    --modular-ai-assistant-bg-light: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 4%, transparent);
+    --modular-ai-assistant-bg-subtle: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 2%, transparent);
+    --modular-ai-assistant-border: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 10%, transparent);
+    --modular-ai-assistant-border-hover: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 40%, transparent);
+    --modular-ai-assistant-skeleton-bg: linear-gradient(90deg, color-mix(in srgb, var(--modular-ai-assistant-primary-color) 8%, transparent) 25%, color-mix(in srgb, var(--modular-ai-assistant-secondary-color) 8%, transparent) 50%, color-mix(in srgb, var(--modular-ai-assistant-primary-color) 8%, transparent) 75%);
+    --modular-ai-assistant-code-bg: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 8%, transparent);
+    --modular-ai-assistant-code-bg-alt: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 5%, transparent);
+    --modular-ai-assistant-text: #374151;
+    --modular-ai-assistant-text-dark: #1f2937;
+    --modular-ai-assistant-text-light: #6b7280;
+    --modular-ai-assistant-error: #d63638;
+    --modular-ai-assistant-error-bg: #fcf0f1;
+    --modular-ai-assistant-modal-overlay: color-mix(in srgb, #121010 60%, transparent);
+    --modular-ai-assistant-modal-bg: #ffffff;
+    --modular-ai-assistant-modal-border: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 15%, transparent);
+    --modular-ai-assistant-close-bg: #ffffff;
+    --modular-ai-assistant-close-border: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 20%, transparent);
+    --modular-ai-assistant-close-hover-bg: #f9fafb;
+    --modular-ai-assistant-shadow-primary: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 30%, transparent);
+    --modular-ai-assistant-shadow-secondary: color-mix(in srgb, var(--modular-ai-assistant-secondary-color) 20%, transparent);
+    --modular-ai-assistant-shadow-primary-hover: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 40%, transparent);
+    --modular-ai-assistant-shadow-secondary-hover: color-mix(in srgb, var(--modular-ai-assistant-secondary-color) 30%, transparent);
+    --modular-ai-assistant-focus-outline: color-mix(in srgb, var(--modular-ai-assistant-primary-color) 40%, transparent);
 }
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Entities\Modules;
+namespace ModularAIAssistant\Entities\Modules;
 
-use ModularAI\Entities\Modules\MetaBoxes\Configuration;
-use ModularAI\Entities\Modules\MetaBoxes\Access;
-use ModularAI\Entities\Modules\MetaBoxes\Usage;
-use ModularAI\Entities\Models\Repository as ModelsRepository;
+use ModularAIAssistant\Entities\Modules\MetaBoxes\Configuration;
+use ModularAIAssistant\Entities\Modules\MetaBoxes\Access;
+use ModularAIAssistant\Entities\Modules\MetaBoxes\Usage;
+use ModularAIAssistant\Entities\Models\Repository as ModelsRepository;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class Repository
 {

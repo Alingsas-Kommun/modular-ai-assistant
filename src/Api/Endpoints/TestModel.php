@@ -1,12 +1,12 @@
 <?php
 
-namespace ModularAI\Api\Endpoints;
+namespace ModularAIAssistant\Api\Endpoints;
 
-use ModularAI\Api\Abstracts\Endpoint;
-use ModularAI\Entities\Models\Repository;
-use ModularAI\Http\Clients\OpenAIClient;
+use ModularAIAssistant\Api\Abstracts\Endpoint;
+use ModularAIAssistant\Entities\Models\Repository;
+use ModularAIAssistant\Http\Clients\OpenAIClient;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class TestModel extends Endpoint
 {
@@ -91,7 +91,7 @@ class TestModel extends Endpoint
         if (!$model) {
             return new \WP_Error(
                 'mai_model_not_found',
-                __('Model not found', 'modular-ai'),
+                __('Model not found', 'modular-ai-assistant'),
                 ['status' => 404]
             );
         }
@@ -100,7 +100,7 @@ class TestModel extends Endpoint
         if (empty($model['model_id'])) {
             return new \WP_Error(
                 'mai_model_id_missing',
-                __('Model name missing', 'modular-ai'),
+                __('Model name missing', 'modular-ai-assistant'),
                 ['status' => 400]
             );
         }
@@ -108,7 +108,7 @@ class TestModel extends Endpoint
         if (empty($model['endpoint'])) {
             return new \WP_Error(
                 'mai_endpoint_missing',
-                __('Endpoint URL missing', 'modular-ai'),
+                __('Endpoint URL missing', 'modular-ai-assistant'),
                 ['status' => 400]
             );
         }
@@ -116,7 +116,7 @@ class TestModel extends Endpoint
         if (empty($model['api_key'])) {
             return new \WP_Error(
                 'mai_api_key_missing',
-                __('API key missing', 'modular-ai'),
+                __('API key missing', 'modular-ai-assistant'),
                 ['status' => 400]
             );
         }

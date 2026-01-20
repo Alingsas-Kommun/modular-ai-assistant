@@ -1,13 +1,13 @@
 <?php
 
-namespace ModularAI\Api\Endpoints;
+namespace ModularAIAssistant\Api\Endpoints;
 
-use ModularAI\Api\Abstracts\Endpoint;
-use ModularAI\Entities\Modules\Repository as ModulesRepository;
-use ModularAI\Services\ModuleRunner;
-use ModularAI\Services\ModuleCacheService;
+use ModularAIAssistant\Api\Abstracts\Endpoint;
+use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
+use ModularAIAssistant\Services\ModuleRunner;
+use ModularAIAssistant\Services\ModuleCacheService;
 
-use function ModularAI\di;
+use function ModularAIAssistant\di;
 
 class RunModule extends Endpoint
 {
@@ -109,7 +109,7 @@ class RunModule extends Endpoint
             if (!$module_id || !$this->modulesRepository->isPublic($module_id)) {
                 return $this->error(
                     'mai_module_not_found',
-                    __('Module not found or not publicly accessible', 'modular-ai'),
+                    __('Module not found or not publicly accessible', 'modular-ai-assistant'),
                     404
                 );
             }
@@ -127,7 +127,7 @@ class RunModule extends Endpoint
         // No valid authentication method found
         return $this->error(
             'mai_unauthorized',
-            __('You do not have permission to access this module', 'modular-ai'),
+            __('You do not have permission to access this module', 'modular-ai-assistant'),
             403
         );
     }
@@ -152,7 +152,7 @@ class RunModule extends Endpoint
         if (!$module) {
             return new \WP_Error(
                 'mai_module_not_found',
-                __('Module not found', 'modular-ai'),
+                __('Module not found', 'modular-ai-assistant'),
                 ['status' => 404]
             );
         }

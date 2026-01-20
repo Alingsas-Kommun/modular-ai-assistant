@@ -2,11 +2,11 @@
 @use 'modal';
 
 // BASE MODULE STYLES
-.modular-ai-module {
+.modular-ai-assistant-module {
     margin: 20px 0;
-    background: var(--modular-ai-bg-light);
+    background: var(--modular-ai-assistant-bg-light);
     border-radius: 16px;
-    border: 1px solid var(--modular-ai-border);
+    border: 1px solid var(--modular-ai-assistant-border);
     padding: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 
@@ -17,13 +17,13 @@
 }
 
 // AI HEADER
-.modular-ai-ai-header {
+.modular-ai-assistant-ai-header {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 16px;
     padding-bottom: 12px;
-    border-bottom: 1px solid var(--modular-ai-border);
+    border-bottom: 1px solid var(--modular-ai-assistant-border);
     
     svg {
         width: 24px;
@@ -35,7 +35,7 @@
         margin: 0;
         font-size: 16px;
         font-weight: 600;
-        background: linear-gradient(135deg, var(--modular-ai-primary-color) 0%, var(--modular-ai-secondary-color) 100%);
+        background: linear-gradient(135deg, var(--modular-ai-assistant-primary-color) 0%, var(--modular-ai-assistant-secondary-color) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -43,9 +43,9 @@
 }
 
 // LOADING STATE
-.modular-ai-loading {
-    .modular-ai-skeleton {
-        background: var(--modular-ai-skeleton-bg);
+.modular-ai-assistant-loading {
+    .modular-ai-assistant-skeleton {
+        background: var(--modular-ai-assistant-skeleton-bg);
         background-size: 200% 100%;
         animation: skeleton-loading 1.5s ease-in-out infinite;
         border-radius: 6px;
@@ -70,11 +70,11 @@
 }
 
 // RESPONSE CONTENT
-.modular-ai-response {
+.modular-ai-assistant-response {
     padding: 0;
     line-height: 1.6;
     font-size: 1rem;
-    color: var(--modular-ai-text);
+    color: var(--modular-ai-assistant-text);
     
     p {
         margin-bottom: 12px;
@@ -85,7 +85,7 @@
     }
     
     h1, h2, h3, h4, h5, h6 {
-        color: var(--modular-ai-text-dark);
+        color: var(--modular-ai-assistant-text-dark);
         margin-top: 20px;
         margin-bottom: 10px;
         font-weight: 600;
@@ -98,7 +98,7 @@
     }
     
     code {
-        background: var(--modular-ai-code-bg);
+        background: var(--modular-ai-assistant-code-bg);
         padding: 2px 6px;
         border-radius: 4px;
         font-size: 0.9em;
@@ -111,7 +111,7 @@
     }
     
     pre {
-        background: var(--modular-ai-code-bg-alt);
+        background: var(--modular-ai-assistant-code-bg-alt);
         padding: 12px;
         border-radius: 6px;
         overflow-x: auto;
@@ -129,18 +129,18 @@
 }
 
 // ERROR STATE
-.modular-ai-error {
-    color: var(--modular-ai-error);
+.modular-ai-assistant-error {
+    color: var(--modular-ai-assistant-error);
     padding: 15px;
-    background: var(--modular-ai-error-bg);
-    border-color: color-mix(in srgb, var(--modular-ai-error) 10%, transparent);
-    border-left-color: var(--modular-ai-error);
+    background: var(--modular-ai-assistant-error-bg);
+    border-color: color-mix(in srgb, var(--modular-ai-assistant-error) 10%, transparent);
+    border-left-color: var(--modular-ai-assistant-error);
     border-width: 1px 1px 1px 4px;
     border-style: solid;
     border-radius: 6px;
     font-size: 1.2rem;
     word-wrap: break-word;
-    color: var(--modular-ai-text-dark);
+    color: var(--modular-ai-assistant-text-dark);
     font-size: 1.1rem;
 
     @supports (corner-shape: squircle) {
@@ -150,10 +150,10 @@
 }
 
 // CURL PREVIEW CONTAINER
-.modular-ai-curl-container {
+.modular-ai-assistant-curl-container {
     margin-top: 24px;
-    background: var(--modular-ai-bg-light);
-    border: 1px solid var(--modular-ai-border);
+    background: var(--modular-ai-assistant-bg-light);
+    border: 1px solid var(--modular-ai-assistant-border);
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     position: relative;
     border-radius: 10px;
@@ -169,7 +169,7 @@
         top: -10px;
         left: 16px;
         padding: 2px 12px;
-        background: linear-gradient(135deg, var(--modular-ai-primary-color) 0%, var(--modular-ai-secondary-color) 100%);
+        background: linear-gradient(135deg, var(--modular-ai-assistant-primary-color) 0%, var(--modular-ai-assistant-secondary-color) 100%);
         color: #fff;
         font-size: 11px;
         font-weight: 600;
@@ -185,14 +185,14 @@
     }
 }
 
-.modular-ai-curl-command {
+.modular-ai-assistant-curl-command {
     padding: 20px;
     overflow-x: auto;
     font-size: 13px;
     line-height: 1.6;
     margin: 0;
     font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-    color: var(--modular-ai-text-dark, #1a202c);
+    color: var(--modular-ai-assistant-text-dark, #1a202c);
     white-space: pre-wrap;
     word-wrap: break-word;
     

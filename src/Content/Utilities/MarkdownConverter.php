@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Content\Utilities;
+namespace ModularAIAssistant\Content\Utilities;
 
 use League\HTMLToMarkdown\HtmlConverter;
 use League\HTMLToMarkdown\Converter\TableConverter;

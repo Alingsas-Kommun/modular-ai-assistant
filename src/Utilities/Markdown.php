@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Utilities;
+namespace ModularAIAssistant\Utilities;
 
 use FastVolt\Helper\Markdown as FastvoltMarkdown;
 

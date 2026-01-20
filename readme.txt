@@ -1,4 +1,4 @@
-=== Modular AI ===
+=== Modular AI Assistant ===
 Contributors: considadam
 Tags: ai, content generation, editor help, snippets
 Requires at least: 5.9
@@ -12,13 +12,13 @@ Add AI-powered modules to your WordPress site for content analysis, generation, 
 
 == Description ==
 
-Modular AI is a powerful WordPress plugin that brings AI capabilities directly into your website. Create custom AI-powered modules that can analyze content, answer questions, generate text, and provide intelligent interactions with your site visitors.
+Modular AI Assistant is a powerful WordPress plugin that brings AI capabilities directly into your website. Create custom AI-powered modules that can analyze content, answer questions, generate text, and provide intelligent interactions with your site visitors.
 
 = Key Features =
 
 * **AI Module Builder** - Create custom AI modules with configurable prompts and behaviors
 * **Multiple AI Models** - Support for OpenAI and other AI providers
-* **Shortcode Integration** - Easy embedding with `[modular-ai]` shortcode
+* **Shortcode Integration** - Easy embedding with `[modular-ai-assistant]` shortcode
 * **Streaming Responses** - Real-time AI response streaming for better UX
 * **Smart Caching** - Configurable response caching to reduce API costs
 * **Content Adapters** - Automatically extract content from posts, pages, and custom post types
@@ -57,7 +57,7 @@ Modular AI is a powerful WordPress plugin that brings AI capabilities directly i
 
 1. Log in to your WordPress admin panel
 2. Navigate to Plugins > Add New
-3. Search for "Modular AI"
+3. Search for "Modular AI Assistant"
 4. Click "Install Now" and then "Activate"
 
 = Manual Installation =
@@ -70,11 +70,11 @@ Modular AI is a powerful WordPress plugin that brings AI capabilities directly i
 
 = Post-Installation Setup =
 
-1. Navigate to Modular AI > Models in your admin panel
+1. Navigate to Modular AI Assistant > Models in your admin panel
 2. Create a new AI Model with your OpenAI API key
-3. Create a new Module under Modular AI > Modules
+3. Create a new Module under Modular AI Assistant > Modules
 4. Configure your module's prompts and settings
-5. Use the shortcode `[modular-ai id="YOUR_MODULE_ID"]` to embed it on any page or post
+5. Use the shortcode `[modular-ai-assistant id="YOUR_MODULE_ID"]` to embed it on any page or post
 
 = Requirements =
 
@@ -90,7 +90,7 @@ Yes, you need an API key from OpenAI or a compatible AI service provider. You ca
 
 = How much does it cost? =
 
-Modular AI itself is free. However, you'll need to pay for API usage from your chosen AI provider (OpenAI, etc.). The plugin includes caching features to help minimize API costs.
+Modular AI Assistant itself is free. However, you'll need to pay for API usage from your chosen AI provider (OpenAI, etc.). The plugin includes caching features to help minimize API costs.
 
 = Can I use streaming responses? =
 
@@ -102,11 +102,11 @@ The plugin doesn't store user personal data by default. However, if you use it t
 
 = Can I customize the appearance? =
 
-Yes! Go to Modular AI > Settings > Appearance to customize the primary and secondary colors used in the frontend display.
+Yes! Go to Modular AI Assistant > Settings > Appearance to customize the primary and secondary colors used in the frontend display.
 
 = How do I disable the shortcode? =
 
-Navigate to Modular AI > Settings > General and uncheck "Enable Shortcode". This will disable all shortcode functionality across your site.
+Navigate to Modular AI Assistant > Settings > General and uncheck "Enable Shortcode". This will disable all shortcode functionality across your site.
 
 = Does it support multiple languages? =
 
@@ -142,11 +142,11 @@ Yes, the plugin is fully translation-ready with support for WordPress i18n/l10n.
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of Modular AI.
+Initial release of Modular AI Assistant.
 
 == Development ==
 
-For development instructions and advanced usage, please visit the [plugin repository](https://github.com/Alingsas-Kommun/modular-ai).
+For development instructions and advanced usage, please visit the [plugin repository](https://github.com/Alingsas-Kommun/modular-ai-assistant).
 
 == Additional Information ==
 
@@ -162,5 +162,5 @@ For support, feature requests, or bug reports, please visit the plugin's support
 
 = Privacy Policy =
 
-Modular AI does not collect or store personal user data. When users interact with AI modules, their queries may be sent to the configured AI service provider (e.g., OpenAI). Please review your AI provider's privacy policy and ensure your site's privacy policy reflects this.
+Modular AI Assistant does not collect or store personal user data. When users interact with AI modules, their queries may be sent to the configured AI service provider (e.g., OpenAI). Please review your AI provider's privacy policy and ensure your site's privacy policy reflects this.
 

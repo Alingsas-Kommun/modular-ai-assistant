@@ -1,6 +1,6 @@
 <?php
 
-namespace ModularAI\Services;
+namespace ModularAIAssistant\Services;
 
 /**
  * Module Cache Service
