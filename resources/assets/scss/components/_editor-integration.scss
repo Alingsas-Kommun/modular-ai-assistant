@@ -2,6 +2,14 @@
     .handle-order-higher, .handle-order-lower {
         display: none;
     }
+
+    &.postbox {
+        filter: none !important;
+
+        .inside {
+            contain: initial !important;
+        }
+    }
 }
 
 .modular-ai-assistant-editor-integration {
