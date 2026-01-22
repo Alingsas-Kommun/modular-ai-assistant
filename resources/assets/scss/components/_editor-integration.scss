@@ -12,6 +12,10 @@
     }
 }
 
+.meta-box-sortables.ui-sortable {
+    filter: none !important;
+}
+
 .modular-ai-assistant-editor-integration {
     label {
         font-weight: 600;
