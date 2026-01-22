@@ -4,7 +4,7 @@ Tags: ai, content generation, editor help, snippets
 Requires at least: 5.9
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -113,6 +113,9 @@ Navigate to Modular AI Assistant > Settings > General and uncheck "Enable Shortc
 Yes, the plugin is fully translation-ready with support for WordPress i18n/l10n.
 
 == Changelog ==
+
+= 1.0.8 =
+* Added fix for resetting postbox sortable css filter
 
 = 1.0.7 =
 * Added a fix for a bug that occured when installing the npm packages in Github CI.
