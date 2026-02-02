@@ -2,12 +2,10 @@
 
 namespace ModularAIAssistant\Assets;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Utilities\ViteManifest;
 use function ModularAIAssistant\{config, di};
-
-if (! defined('ABSPATH')) {
-    exit;
-}
 
 class Admin
 {

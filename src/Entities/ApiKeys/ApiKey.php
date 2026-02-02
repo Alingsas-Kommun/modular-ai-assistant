@@ -2,11 +2,9 @@
 
 namespace ModularAIAssistant\Entities\ApiKeys;
 
-use ModularAIAssistant\Abstracts\PostType;
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+use ModularAIAssistant\Abstracts\PostType;
 
 class ApiKey extends PostType
 {

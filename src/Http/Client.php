@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Http;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Http\Interfaces\HttpClientInterface;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\GuzzleException;

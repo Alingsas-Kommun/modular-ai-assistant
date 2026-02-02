@@ -2,11 +2,9 @@
 
 namespace ModularAIAssistant\Abstracts;
 
-use ModularAIAssistant\Utilities\Template;
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+use ModularAIAssistant\Utilities\Template;
 
 abstract class MetaBox
 {

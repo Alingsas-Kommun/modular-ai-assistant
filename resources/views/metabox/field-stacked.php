@@ -12,9 +12,7 @@
  * @var MetaBox $metabox
 **/
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div class="modular-ai-assistant-field-stacked" style="margin-bottom: 20px;">

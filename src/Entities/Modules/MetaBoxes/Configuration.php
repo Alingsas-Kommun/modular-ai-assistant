@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Entities\Modules\MetaBoxes;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Abstracts\MetaBox;
 use ModularAIAssistant\Entities\Models\Repository as ModelsRepository;
 use ModularAIAssistant\Services\ModuleCacheService;

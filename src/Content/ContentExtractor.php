@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Content;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Content\Utilities\HtmlProcessor;
 use ModularAIAssistant\Content\Utilities\MarkdownConverter;
 

@@ -5,9 +5,7 @@
  * @var WP_Post $post
 **/
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div x-data="modelTest">

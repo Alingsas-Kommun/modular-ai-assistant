@@ -10,9 +10,7 @@
  * @var \WP_Post $post
  */
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 <div x-data="apiKeyConfiguration(<?php echo absint($post->ID); ?>)" class="modular-ai-assistant-api-key-wrapper">
     <div class="modular-ai-assistant-api-key-field-group">

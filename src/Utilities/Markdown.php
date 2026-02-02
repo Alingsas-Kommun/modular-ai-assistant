@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Utilities;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use FastVolt\Helper\Markdown as FastvoltMarkdown;
 
 class Markdown

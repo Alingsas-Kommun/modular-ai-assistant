@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Api\Traits;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Entities\ApiKeys\Repository as ApiKeysRepository;
 
 use function ModularAIAssistant\di;

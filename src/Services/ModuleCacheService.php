@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Services;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 /**
  * Module Cache Service
  * Manages caching of module responses using WordPress transients

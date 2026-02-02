@@ -2,11 +2,9 @@
 
 namespace ModularAIAssistant\Api\Abstracts;
 
-use ModularAIAssistant\Api\Traits\ApiAuthentication;
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+use ModularAIAssistant\Api\Traits\ApiAuthentication;
 
 abstract class Endpoint
 {

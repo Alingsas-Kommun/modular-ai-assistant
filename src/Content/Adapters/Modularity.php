@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Content\Adapters;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Content\Interfaces\AdapterInterface;
 use Modularity\Editor;
 use Modularity\Helper\Post as ModularityPost;

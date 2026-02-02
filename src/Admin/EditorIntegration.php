@@ -2,14 +2,12 @@
 
 namespace ModularAIAssistant\Admin;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Utilities\Template;
 use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
 
 use function ModularAIAssistant\di;
-
-if (! defined('ABSPATH')) {
-    exit;
-}
 
 class EditorIntegration
 {

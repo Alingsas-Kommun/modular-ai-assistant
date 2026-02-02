@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Entities\Modules\MetaBoxes;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Abstracts\MetaBox;
 
 class Access extends MetaBox

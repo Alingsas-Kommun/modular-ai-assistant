@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Services;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Entities\Modules\Repository as ModulesRepository;
 use ModularAIAssistant\Http\Clients\OpenAIClient;
 use ModularAIAssistant\Content\ContentExtractor;

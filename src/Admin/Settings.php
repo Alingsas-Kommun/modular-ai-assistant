@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Admin;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Abstracts\SettingsPage;
 
 class Settings extends SettingsPage

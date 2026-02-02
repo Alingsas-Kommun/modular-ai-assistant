@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Entities\Modules;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Entities\Modules\MetaBoxes\Configuration;
 use ModularAIAssistant\Entities\Modules\MetaBoxes\Access;
 use ModularAIAssistant\Entities\Modules\MetaBoxes\Usage;

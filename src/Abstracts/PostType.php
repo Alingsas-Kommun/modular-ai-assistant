@@ -2,9 +2,7 @@
 
 namespace ModularAIAssistant\Abstracts;
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 abstract class PostType
 {

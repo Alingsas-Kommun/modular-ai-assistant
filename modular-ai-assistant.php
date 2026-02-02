@@ -12,16 +12,13 @@
  * Domain Path: /resources/languages
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Application;
 use ModularAIAssistant\Providers\PluginServiceProvider;
 use ModularAIAssistant\Providers\AdminServiceProvider;
 use ModularAIAssistant\Providers\FrontendServiceProvider;
 use ModularAIAssistant\Providers\ApiServiceProvider;
-
-// Check if the plugin is loaded correctly
-if (!defined('ABSPATH')) {
-    exit;
-}
 
 // Check if the plugin is loaded correctly
 if (!function_exists('add_action')) {

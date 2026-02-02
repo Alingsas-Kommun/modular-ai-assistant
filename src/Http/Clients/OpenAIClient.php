@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Http\Clients;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Http\Client;
 use ModularAIAssistant\Http\Interfaces\AiClientInterface;
 

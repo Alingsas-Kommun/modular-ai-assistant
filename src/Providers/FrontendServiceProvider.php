@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Providers;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Abstracts\ServiceProvider;
 use ModularAIAssistant\Utilities\Container;
 use ModularAIAssistant\Assets\Frontend as FrontendAssets;

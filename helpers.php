@@ -2,11 +2,9 @@
 
 namespace ModularAIAssistant;
 
-use ModularAIAssistant\Utilities\Container;
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+use ModularAIAssistant\Utilities\Container;
 
 /**
  * Get configuration value

@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Shortcodes;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Utilities\Template;
 
 use function ModularAIAssistant\getSetting;

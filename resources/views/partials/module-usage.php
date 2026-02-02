@@ -5,9 +5,7 @@
  * @var WP_Post $post
 **/
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <p><?php esc_html_e('Use these shortcodes to display this module:', 'modular-ai-assistant'); ?></p>

@@ -9,9 +9,7 @@
  * These are template variables extracted from an array, not true global variables.
  */
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <?php if (empty($modules)): ?>

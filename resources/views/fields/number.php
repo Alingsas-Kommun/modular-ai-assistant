@@ -12,9 +12,7 @@
  * These are template variables extracted from an array, not true global variables.
 **/
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 $min = isset($field['min']) ? $field['min'] : 0;
 $step = isset($field['step']) ? $field['step'] : 1;

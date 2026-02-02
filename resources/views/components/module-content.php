@@ -8,9 +8,7 @@
  * @var string $context Display context: 'frontend' or 'editor'
  */
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <div x-show="loading" class="modular-ai-assistant-loading">

@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Api\Endpoints;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Api\Abstracts\Endpoint;
 use ModularAIAssistant\Utilities\Template;
 

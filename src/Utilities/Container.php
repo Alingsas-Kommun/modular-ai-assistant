@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Utilities;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 class Container
 {
     private static array $bindings = [];

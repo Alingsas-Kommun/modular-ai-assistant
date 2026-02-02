@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Abstracts;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Utilities\Container;
 
 abstract class ServiceProvider

@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Entities\ApiKeys;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Entities\ApiKeys\MetaBoxes\Configuration;
 
 class Repository

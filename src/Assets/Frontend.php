@@ -2,14 +2,12 @@
 
 namespace ModularAIAssistant\Assets;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Utilities\ViteManifest;
 use ModularAIAssistant\Utilities\Template;
 
 use function ModularAIAssistant\{config, di, getSetting};
-
-if (! defined('ABSPATH')) {
-    exit;
-}
 
 class Frontend
 {

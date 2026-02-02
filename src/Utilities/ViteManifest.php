@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Utilities;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use function ModularAIAssistant\config;
 
 class ViteManifest

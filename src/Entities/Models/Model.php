@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Entities\Models;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use ModularAIAssistant\Abstracts\PostType;
 
 class Model extends PostType

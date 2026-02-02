@@ -6,9 +6,7 @@
  * @var string $secondary_color
 **/
 
-if (! defined('ABSPATH')) {
-    exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 <style id="modular-ai-assistant-custom-colors">

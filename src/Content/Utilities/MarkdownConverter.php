@@ -2,6 +2,8 @@
 
 namespace ModularAIAssistant\Content\Utilities;
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 use League\HTMLToMarkdown\HtmlConverter;
 use League\HTMLToMarkdown\Converter\TableConverter;
 
