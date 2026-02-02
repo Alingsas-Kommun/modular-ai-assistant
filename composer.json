@@ -1,11 +1,11 @@
 {
     "name": "alingsas-kommun/modular-ai-assistant",
-    "description": "WordPress plugin that let's you integrate AI into your WordPress website",
+    "description": "WordPress plugin that lets you integrate AI into your WordPress website",
     "type": "wordpress-plugin",
     "license": "GPL-3.0-or-later",
     "require": {
         "guzzlehttp/guzzle": "^7.8",
-        "fastvolt/markdown": "^0.2",
+        "fastvolt/markdown": "^0.2.5",
         "league/html-to-markdown": "^5.0"
     },
     "autoload": {
